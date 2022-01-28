@@ -61,12 +61,10 @@
         </ul>
         
         <div class="hero-description">
-            <picture>
-                <source srcset="./images/hero-1t-124@1x.png 1x, ./images/hero-1t-248@2x.png 2x" media="(min-width:768px)">
-                <source srcset="./images/hero-1d-188@1x.png 1x, ./images/hero-1d-376@2x.png 2x" media="(min-width:1280px)">
-                <img src="./images/hero-1d-188@1x.png" alt="eco products">
-            </picture>
             
+            <img srcset="./images/hero-1t-124@1x.png 124w, ./images/hero-1t-248@2x.png 248w, /images/hero-2t-143@1x.png 143w, ./images/hero-1d-188@1x.png 188w, ./images/hero-1d-376@2x.png 376w"
+                sizes="(min-width:1280px) 188px, (min-width:768px) 124px, " alt="eco products"
+                src="./images/hero-1d-188@1x.png" />           
             <div>
                 <p class="hero-description__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et</p>
                 <div class="hero-description__icon">
@@ -79,12 +77,12 @@
         </div>
 
         <div class="hero-circle"></div>
-        <picture class="img-icecream">
-            <source srcset="./images/hero-2m-171@1x.png 1x, ./images/hero-2m-342@2x.png 2x" media="(max-width:480px)">
-            <source srcset="./images/hero-2t-143@1x.png 1x, ./images/hero-2t-286@2x.png 2x" media="(max-width:1279px)">
-            <source srcset="./images/hero-2d-236@1x.png 1x, ./images/hero-2d-472@2x.png 2x" media="(min-width:1280px)">
-            <img src="./images/hero-2m-171@1x.png " alt="large ice-cream">
-        </picture>
+        <div class="img-icecream">
+            <img srcset="./images/hero-2m-171@1x.png 171w, ./images/hero-2m-342@2x.png 342w, /images/hero-2t-143@1x.png 143w, ./images/hero-2t-286@2x.png 286w, ./images/hero-2d-236@1x.png 236w, ./images/hero-2d-472@2x.png 472w  "
+                sizes="(min-width:1280px) 236px, (min-width:768px) 143px, (min-width:320px) 171px  " alt="large ice-cream"
+                src="./images/hero-2m-171@1x.png" />
+        </div>
+
         <ul class="hero-figur">
             <li  class="hero-figur__item"> 
                 <p class="hero-figur__number">16</p> 
@@ -95,11 +93,11 @@
                 <p class="hero-figur__place">food trucks</p>
             </li>
         </ul>
-        <picture class="img-girl">
-            <source srcset="./images/hero-3t-168@1x.png 1x, ./images/hero-3t-336@2x.png 2x" media="(min-width:768px)">
-            <source srcset="./images/hero-3d-293@1x.png 1x, ./images/hero-3d-586@2x.png 2x" media="(min-width:1280px)">
-            <img src="./images/hero-3d-293@1x.png" alt="tasty ice-cream">
-        </picture>
+        <div class="img-girl">
+            <img srcset="./images/hero-3t-168@1x.png 168w, ./images/hero-3t-336@2x.png 336w, ./images/hero-3d-293@1x.png 293w, ./images/hero-3d-586@2x.png 586w"
+                sizes="(min-width:1280px) 293px, (min-width:768px) 168px, " alt="tasty ice-cream" src="./images/hero-3d-293@1x.png" />
+            
+        </div>
         
     </div>
 </section>
