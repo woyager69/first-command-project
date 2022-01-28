@@ -47,9 +47,26 @@
   }
 }
 
-//sitenav
-.sitenav {
+//mobile menu
+.sitenav--sidebar {
   display: none;
+}
+
+// sitenav desktop
+.sitenav {
+  display: flex;
+  align-items: center;
+}
+.sitenav__item + .sitenav__item {
+  margin-left: 35px;
+}
+.sitenav__link {
+  font-family: DM Sans, sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.31;
+
+  color: white;
 }
 
 // hero
@@ -77,10 +94,24 @@
 
   position: relative;
   z-index: 50;
+  @media screen and (min-width: 768px) {
+    max-width: 162px;
+    font-size: 22px;
+  }
+  @media screen and (min-width: 1280px) {
+    max-width: 277px;
+    font-size: 38px;
+  }
 }
 .hero__title--accent {
   color: $title-text-color;
   font-size: 48px;
+  @media screen and (min-width: 768px) {
+    font-size: 34px;
+  }
+  @media screen and (min-width: 1280px) {
+    font-size: 58px;
+  }
 }
 
 .hero-nav {
@@ -107,11 +138,30 @@
   @media screen and (min-width: 768px) {
     margin-top: 20px;
   }
+  @media screen and (min-width: 768px) {
+    margin-top: 25px;
+    padding-bottom: 13px 22px;
+    cursor: pointer;
+    & + .hero-nav__item {
+      margin-left: 15px;
+    }
+    & .hero-nav__link {
+      font-size: 14px;
+    }
+    &:hover,
+    &:focus {
+      background-color: $second-accent-color;
+    }
+  }
 }
 .hero-nav__item--white {
   background-color: white;
   & .hero-nav__link {
     color: $title-text-color;
+  }
+  &:hover,
+  &:focus {
+    background-color: $first-accent-color;
   }
 }
 
