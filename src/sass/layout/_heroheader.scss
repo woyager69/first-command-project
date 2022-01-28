@@ -6,6 +6,12 @@
     top: 37px;
   }
 }
+.container__header {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    justify-content: space-between;
+  }
+}
 
 // logo style
 .logo {
@@ -37,7 +43,7 @@
     font-size: 16px;
     font-weight: 1.3;
 
-    border-radius: 20px;
+    border-radius: 22px;
   }
 }
 
@@ -53,6 +59,10 @@
   background-color: $secondary-background-color;
 
   position: relative;
+  @media screen and (min-width: 768px) {
+    padding-top: 102px;
+    padding-bottom: 28px;
+  }
 }
 .hero__title {
   max-width: 218px;
@@ -82,7 +92,7 @@
   margin-top: 19px;
   padding: 6px 14px;
   background-color: $title-text-color;
-  border-radius: 20px;
+  border-radius: 22px;
   & + .hero-nav__item {
     margin-left: 8px;
   }
@@ -94,6 +104,9 @@
     font-size: 8px;
     line-height: 1.25;
   }
+  @media screen and (min-width: 768px) {
+    margin-top: 20px;
+  }
 }
 .hero-nav__item--white {
   background-color: white;
@@ -102,11 +115,64 @@
   }
 }
 
-.hero-inform {
+// description block
+.hero-description {
   display: none;
+  @media screen and (min-width: 768px) {
+    display: block;
+    display: flex;
+    align-items: flex-end;
+  }
 }
+.hero-description__text {
+  max-width: 114px;
+  margin-bottom: 7px;
+
+  font-family: DM Sans, sans-serif;
+  font-weight: 400;
+  font-size: 8px;
+  line-height: 12px;
+
+  color: white;
+}
+.hero-description__icon {
+  width: 18px;
+  height: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: white;
+  border-radius: 9px;
+  fill: $title-text-color;
+}
+
+// figuranes
 .hero-figur {
   display: none;
+  @media screen and (min-width: 768px) {
+    display: block;
+    position: absolute;
+    top: 96px;
+    right: 44px;
+  }
+}
+.hero-figur__number {
+  font-family: Titan One, sans-serif;
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 1.14;
+  letter-spacing: 0.04em;
+
+  color: $title-text-color;
+}
+.hero-figur__place {
+  font-family: DM Sans, sans-serif;
+  font-weight: 400;
+  font-size: 8px;
+  line-height: 1.25;
+
+  color: white;
 }
 
 // background circle
@@ -119,16 +185,30 @@
   position: absolute;
   top: 83px;
   left: 36px;
+  @media screen and (min-width: 768px) {
+    width: 324px;
+    height: 322px;
+    top: 31px;
+    left: 307px;
+  }
 }
 // imgages
-.img-milk {
-  display: none;
-}
+
 .img-icecream {
   position: absolute;
   bottom: 0;
   right: 32px;
+  @media screen and (min-width: 768px) {
+    right: 275px;
+  }
 }
 .img-girl {
   display: none;
+  @media screen and (min-width: 768px) {
+    display: block;
+
+    position: absolute;
+    bottom: 0;
+    right: 34px;
+  }
 }
