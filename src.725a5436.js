@@ -3,4 +3,4 @@ parcelRequire=function(e,r,t,n){var i,o="function"==typeof parcelRequire&&parcel
 },{"/home/runner/work/first-command-project/first-command-project/src/images/product-1m-249@1x.png":[["product-1m-249@1x.661ddde7.png","QxCf"],"QxCf"]}],"Focm":[function(require,module,exports) {
 "use strict";require("./sass/main.scss");
 },{"./sass/main.scss":"clu1"}]},{},["Focm"], null)
-//# sourceMappingURL=/first-command-project/src.9944572f.js.map
+//# sourceMappingURL=/first-command-project/src.725a5436.js.map
