@@ -1,6 +1,6 @@
 
     
-.headind-label {
+.products__headind-label {
 font-family: titan one;
 font-style: normal;
 font-weight: normal;
@@ -11,7 +11,7 @@ letter-spacing: 0.04em;
 text-transform: uppercase;
 color: #FFA5BA;
 }
-.heading{
+.products__heading{
     font-family: Titan One;
 font-style: normal;
 font-weight: normal;
@@ -25,9 +25,15 @@ color: #D41443;
 
 }
 .products-block__menu{
+    
+    width: 330px;
     background: #FFB8CA;
 border-radius: 24px;
+
 }
+
+
+
 .product-menu__item__text{
     font-family: Titan One;
 font-style: normal;
@@ -37,9 +43,21 @@ line-height: 34px;
 text-align: center;
 letter-spacing: 0.04em;
 text-transform: uppercase;
-
+padding-top: 163px;
 color: #FFFFFF;
+margin-top: 225px;
+}
 
+.ice-coffee{
+    background-image: url("/images/product-2d-335@1x.png");
+    background-position-x: center;
+   position:absolute;
+    margin-left: auto;
+    margin-right: auto;
+    width: 335px;
+    height: 335px;
+    margin-bottom: 38px;
+    background-repeat: no-repeat;
 }
 .product-menu__item__decoration{
     font-family: Titan One;
@@ -50,9 +68,98 @@ color: #FFFFFF;
     text-align: center;
     letter-spacing: 0.04em;
     text-transform: uppercase;
+    margin-top: 32px;
+
     
     color: #FFFFFF;
 }
+.products-menu{
+    display: flex;
+}
+.products-menu__item{
+    width: 329px;
+}
+.products-item__block{
+    background:#FFB8CA ;
+    width: 329px;
+height: 525px;
+border-radius: 24px;
+
+}
+.background-ice-coffee{
+    background-color: $second-product-color;
+}
+.product-menu__item__text::after{
+
+content: "...";
+display: block;
+padding-top:25px ;
+
+}
+.products-item__block > p{
+    font-family: DM Sans;
+font-style: normal;
+font-weight: bold;
+font-size: 16px;
+line-height: 176%;
+/* or 28px */
+margin-top: 30px;
+text-align: center;
+letter-spacing: 0.04em;
+
+color: #FFFFFF;
+}
+.products-menu__item:not(:first-child){
+    margin-left: 28px;
+}
+.background-MILKSHAKES{
+    background-color: $third-product-color;
+}
+.milkshakes{
+    background-image: url("/images/product-3d-335@1x.png");
+    background-position-x: center;
+   position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    width: 335px;
+    height: 335px;
+    margin-bottom: 38px;
+    background-repeat: no-repeat;
+
+}
 .ice-cream{
-    background-image: url("/images/product-1m-249@1x.png");
+    background-image: url("/images/product-1d-335@1x.png");
+    background-position-x: center;
+   position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    width: 335px;
+    height: 335px;
+    margin-bottom: 38px;
+    background-repeat: no-repeat;
+}
+.products__block {
+    display: flex;
+    flex-wrap: wrap;
+
+}
+.product-menu__item__information{
+    font-family: DM SANS;
+    font-style: normal;
+    font-weight: bolt;
+    font-size: 16px;
+    line-height: 176%;
+    text-align: center;
+    letter-spacing: 0.04em;
+    color: #FFFFFF;
+    margin-left: auto;
+    margin-right: auto;
+    width: 241px;
+    margin-top: 32px;
+
+}
+.products__menu{
+    width: 335px;
+  
+
 }
