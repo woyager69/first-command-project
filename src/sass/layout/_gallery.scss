@@ -1,24 +1,22 @@
 .gallery {
-  padding: 60px 0;
+  padding: 100px 0;
 }
 
 .grid-container {
   display: flex;
+  margin-bottom: -2px;
+  @media screen and (min-width: 768px) and (max-width: 1279px) {
+    padding-left: 40px;
+    padding-right: 40px;
+    margin-bottom: -4px;
+  }
 
-  // justify-items: stretch;
-  // @media screen and (min-width: 320px) {
-  //   column-count: 2;
-  // }
-  // @media screen and (min-width: 481px) and (max-width: 767px) {
-  //   column-count: 3;
-  // }
-  // @media screen and (min-width: 728px) and (max-width: 1279px) {
-  //   column-count: 5;
-  // }
-  // @media screen and (min-width: 1280px) {
-  //   column-count: 7;
-  // }
-  // column-gap: 16px;
+  @media screen and (min-width: 1280px) {
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-bottom: -6px;
+  }
+
   margin: 0 auto;
 }
 .grid-block {
@@ -26,19 +24,75 @@
   flex-direction: column;
 }
 .grid-item {
-  background-color: salmon;
-  margin-right: 8px;
-  margin-bottom: 8px;
-  width: 140px;
-  height: 140px;
   border-radius: 14%;
   display: inline-block;
+  background-color: salmon;
+  &:not(:last-child) {
+    margin-right: 2px;
+  }
+  margin-bottom: 2px;
+  @media screen and (min-width: 320px) {
+    width: calc((100vw - 55px) / 7);
+    height: calc((100vw - 55px) / 7);
+  }
+  @media screen and (min-width: 480px) {
+    width: 62px;
+    height: 62px;
+    &:not(:last-child) {
+      margin-right: 3px;
+    }
+    margin-bottom: 3px;
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1279px) {
+    &:not(:last-child) {
+      margin-right: 4px;
+    }
+    margin-bottom: 4px;
+    width: 85px;
+    height: 85px;
+  }
+  @media screen and (min-width: 1280px) {
+    &:not(:last-child) {
+      margin-right: 6px;
+    }
+    margin-bottom: 6px;
+    width: 139px;
+    height: 139px;
+  }
 }
 .big {
-  width: 280px;
-  height: 280px;
   border-radius: 7%;
+  @media screen and (min-width: 320px) {
+    width: calc((100vw - 55px) / 3.5);
+    height: calc((100vw - 55px) / 3.5);
+  }
+  @media screen and (min-width: 480px) {
+    width: 125px;
+    height: 125px;
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1279px) {
+    width: 175px;
+    height: 175px;
+  }
+  @media screen and (min-width: 1280px) {
+    width: 285px;
+    height: 285px;
+  }
 }
 .first-column {
-  margin-top: 150px;
+  margin-top: 14%;
+}
+.second-column {
+  margin-top: 8.7%;
+}
+.fourth-column {
+  margin-top: 10%;
+}
+.fifth-column {
+  margin-top: 5.2%;
+}
+.sixth-column {
+  margin-top: 15.3%;
 }
