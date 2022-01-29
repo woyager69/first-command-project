@@ -22,7 +22,7 @@
             <li class="sitenav__item"><a class="sitenav__link" href="#">Our products</a></li>
             <li class="sitenav__item"><a class="sitenav__link" href="#">Contact</a></li>
         </ul>
-        <button type="button" class="hero-btn">Buy now
+        <button type="button" class="hero-btn"> <span class="btn-gap">Buy now</span> 
             <svg width="8" height="10" fill="none" xmlns="http://www.w3.org/2000/svg">
                  <path d="m1.616 1 4.428 4-4.428 4" stroke="#D41443" stroke-width="2" stroke-linecap="round"
                                 stroke-linejoin="round" />
@@ -30,20 +30,26 @@
         </button>
 
 
-        <div class="sitenav--sidebar">
-            <button type="button">Buy now 
-                <svg width="8" height="10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="m1.616 1 4.428 4-4.428 4" stroke="#D41443" stroke-width="2" stroke-linecap="round"
+        <div class="sitenav-menu">
+            <input class="checkbox" id="check-sidebar" type="checkbox">
+            <label class="menu-btn" for="check-sidebar" >
+                <span class="menu-icon"></span>
+            </label>
+            <div class="menu">
+                <button type="button" class="hero-btn--menu"> <span class="btn-gap">Buy now</span>
+                    <svg width="8" height="10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="m1.616 1 4.428 4-4.428 4" stroke="#D41443" stroke-width="2" stroke-linecap="round"
                             stroke-linejoin="round" />
-                </svg>
+                    </svg>
                 </button>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About us</a></li>
-                <li><a href="#">How it’s made?</a></li>
-                <li><a href="#">Our products</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
+                <ul class="menu__list">
+                    <li class="menu__item"><a class="sitenav__link" href="#">Home</a></li>
+                    <li class="menu__item"><a class="sitenav__link" href="#">About us</a></li>
+                    <li class="menu__item"><a class="sitenav__link" href="#">How it’s made?</a></li>
+                    <li class="menu__item"><a class="sitenav__link" href="#">Our products</a></li>
+                    <li class="menu__item"><a class="sitenav__link" href="#">Contact</a></li>
+                </ul>
+            </div>
         </div>
     </div>
 
@@ -68,7 +74,7 @@
             <div>
                 <p class="hero-description__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et</p>
                 <div class="hero-description__icon">
-                    <svg version="1.0" xmlns="http://www.w3.org/2000/svg" width="7.667" height="6.333" viewBox="0 0 11 10">
+                    <svg version="1.0" xmlns="http://www.w3.org/2000/svg" width="8.667" height="7.333" viewBox="0 0 11 10">
                         <path
                                 d="M6.203.866c-.105.037-.204.111-.44.332-.258.236-.318.347-.303.549.007.09.028.17.058.226.035.06.404.41 1.222 1.156L7.913 4.2l-3.724.004-3.727.006-.108.045a.573.573 0 0 0-.302.268C.004 4.614 0 4.64 0 4.992v.374l.067.119c.068.125.17.214.313.273.078.031.325.033 3.82.04l3.735.003-1.205 1.1C5.402 8.109 5.456 8.053 5.456 8.3c0 .18.084.305.372.56.133.12.274.233.315.252.106.053.451.053.559.002.103-.05 4.154-3.732 4.227-3.841.052-.078.058-.108.058-.274 0-.142-.009-.2-.039-.254C10.893 4.653 6.844.967 6.725.903 6.648.862 6.6.853 6.457.846a.872.872 0 0 0-.254.02z" />
                     </svg>
@@ -85,10 +91,12 @@
 
         <ul class="hero-figur">
             <li  class="hero-figur__item"> 
+                <div class="figur-circle"></div>
                 <p class="hero-figur__number">16</p> 
                 <p class="hero-figur__place">cafes</p>
             </li>
             <li class="hero-figur__item">
+                <div class="figur-circle"></div>
                 <p class="hero-figur__number">23</p>
                 <p class="hero-figur__place">food trucks</p>
             </li>
