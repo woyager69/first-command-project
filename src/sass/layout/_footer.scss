@@ -3,7 +3,9 @@
 }
 .footer-text {
     max-width: 230px;
-    flex-wrap: wrap;
+    @media screen and (min-width: 1280px) {
+        max-width: 100%;
+    }
 }
 .text-one, .text-two {
     font-family: Titan One;
@@ -90,4 +92,10 @@
     line-height: 152%;
     text-align: center;
     color: $primary-text-color;
-} 
+}
+.footer-position {
+    @media screen and (min-width: 768px) {
+        display: flex;
+        justify-content: space-between;
+    } 
+}
