@@ -1,18 +1,22 @@
 .section-contacts {
+    display: flex;
+    flex-direction: column;
     background-color: #FFF5F6;
+    @media screen and (min-width: 768px) {}
 }
 
 .contacts {
+    padding: 0 30px;
     @media screen and (min-width: 768px) {
         display: flex;
-        justify-content: space-around;
-        align-items: center;
     }
 }
 
 .contacts__item {
-    width: calc(100% - 2 * 50px);
-    
+    width: 220px;
+    @media screen and (min-width: 480px) {
+        max-width: 380px;
+    }
 
     &:not(:last-child) {
         margin-bottom: 20px;
@@ -44,7 +48,7 @@
     display: inline-block;
     background-color: #F0D1A5;
     border-radius: 6px;
-    padding: 0 30px;
+    padding: 0 25px;
 
     &--green {
         background-color: #C2E297;
@@ -107,35 +111,24 @@
     }
 }
 
-.schedule {
-    &::before {
-        content: "";
-        display: block;
-        width: 100%;
-        border: 1px solid #E1E1E1;
-        top: 0;
-        bottom: 25px;
-        @media screen and (min-width: 768px) {
-            bottom: 30px;
-        }
-        @media screen and (min-width: 1200px) {
-            bottom: 32px;
-        }
-    }
-
+.contacts__schedule {
+    &::before,
     &::after {
         content: "";
         display: block;
         width: 100%;
-        border: 1px solid #E1E1E1;
-        top: 25px;
-        bottom: 0;
-        @media screen and (min-width: 768px) {
-            top: 30px;
-        }
-        @media screen and (min-width: 1200px) {
-            top: 32px;
-        }
+        height: 0;
+        border: 1px solid $border-color;
+    }
+}
+
+.schedule {
+    padding: 25px 0;
+    @media screen and (min-width: 768px) {
+        padding: 30px 0;
+    }
+    @media screen and (min-width: 1200px) {
+        padding: 32px 0;
     }
 }
 
@@ -174,22 +167,28 @@
     color: #FFA5BA;
 }
 
+.contacts__links {
+    margin-top: 25px;
+    @media screen and (min-width: 768px) {
+        margin-top: 30px;
+    }
+    @media screen and (min-width: 1200px) {
+        margin-top: 32px;
+    }
+}
 .contacts__link {
     font-style: normal;
     font-weight: 500;
     font-size: 12px;
     line-height: calc(18 / 12);
     color: #907E82;
-    margin-top: 25px;
 
     @media screen and (min-width: 768px) {
         font-size: 14px;
         line-height: calc(26 / 14);
-        margin-top: 30px;
     }
     @media screen and (min-width: 1200px) {
         font-size: 16px;
-        margin-top: 32px;
     }
 }
 
