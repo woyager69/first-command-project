@@ -1,7 +1,5 @@
 .section-contacts {
     background-color: #FFF5F6;
-    padding-left: 50px;
-    padding-right: 50px;
 }
 
 .contacts {
@@ -13,14 +11,15 @@
 }
 
 .contacts__item {
-    width: 100%;
+    width: calc(100% - 2 * 50px);
+    
 
     &:not(:last-child) {
         margin-bottom: 20px;
     }
 
     @media screen and (min-width: 768px) {
-        flex-basis: calc(100% / 3);
+        flex-basis: calc((100% - 2 * 20px) / 3);
         margin-bottom: 0;
 
         &:not(:last-child) {
@@ -42,8 +41,10 @@
 }
 
 .contacts__label {
+    display: inline-block;
     background-color: #F0D1A5;
     border-radius: 6px;
+    padding: 0 30px;
 
     &--green {
         background-color: #C2E297;
@@ -55,13 +56,156 @@
     line-height: calc(22 / 12);
     letter-spacing: 0.04em;
     color: #FFFFFF;
+    margin-bottom: 25px;
 
     @media screen and (min-width: 768px) {
         font-size: 16px;
-        line-height: calc(30 / 16);
+        margin-bottom: 30px;
+    }
+    @media screen and (min-width: 1200px) {
+        margin-bottom: 32px;
     }
 }
 
 .contacts__title {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: calc(22 / 12);
+    letter-spacing: 0.04em;
+    color: #000000;
+    margin-bottom: 10px;
 
+    @media screen and (min-width: 768px) {
+        font-size: 14px;
+        margin-bottom: 14px;
+    }
+    @media screen and (min-width: 1200px) {
+        font-size: 16px;
+        margin-bottom: 10px;
+    }
+}
+
+.contacts__text {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: calc(18 / 12);
+    color: #907E82;
+    margin-bottom: 25px;
+
+    @media screen and (min-width: 768px) {
+        font-size: 14px;
+        line-height: calc(23 / 14);
+        margin-bottom: 30px;
+    }
+    @media screen and (min-width: 1200px) {
+        font-size: 16px;
+        line-height: calc(29 / 16);
+        letter-spacing: 0.04em;
+        margin-bottom: 32px;
+    }
+}
+
+.schedule {
+    &::before {
+        content: "";
+        display: block;
+        width: 100%;
+        border: 1px solid #E1E1E1;
+        top: 0;
+        bottom: 25px;
+        @media screen and (min-width: 768px) {
+            bottom: 30px;
+        }
+        @media screen and (min-width: 1200px) {
+            bottom: 32px;
+        }
+    }
+
+    &::after {
+        content: "";
+        display: block;
+        width: 100%;
+        border: 1px solid #E1E1E1;
+        top: 25px;
+        bottom: 0;
+        @media screen and (min-width: 768px) {
+            top: 30px;
+        }
+        @media screen and (min-width: 1200px) {
+            top: 32px;
+        }
+    }
+}
+
+.schedule__item {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: calc(22 / 12);
+    
+    @media screen and (min-width: 768px) {
+        font-size: 14px;
+    }
+    @media screen and (min-width: 1200px) {
+        font-size: 16px;
+    }
+
+    &:first-child {
+        margin-bottom: 10px;
+        @media screen and (min-width: 768px) {
+            margin-bottom: 16px;
+        }
+        @media screen and (min-width: 1200px) {
+            margin-bottom: 15px;
+        }
+    }
+}
+
+.schedule__title {
+    color: #000000;
+    @media screen and (min-width: 1200px) {
+        letter-spacing: 0.04em;
+    }
+}
+
+.schedule__time {
+    color: #FFA5BA;
+}
+
+.contacts__link {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: calc(18 / 12);
+    color: #907E82;
+    margin-top: 25px;
+
+    @media screen and (min-width: 768px) {
+        font-size: 14px;
+        line-height: calc(26 / 14);
+        margin-top: 30px;
+    }
+    @media screen and (min-width: 1200px) {
+        font-size: 16px;
+        margin-top: 32px;
+    }
+}
+
+.contacts__btn {
+    cursor: pointer;
+    font-family: inherit;
+    background-color: #D41342;
+    border-radius: 22px;
+    height: 44px;
+    padding: 0 17px;
+
+    font-weight: bold;
+    font-size: 16px;
+    line-height: calc(21 / 16);
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #FFFFFF;
 }
