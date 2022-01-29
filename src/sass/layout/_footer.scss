@@ -1,5 +1,5 @@
 .footer-section {
-    margin-top: 113px;
+    padding-top: 113px;
 }
 .footer-text {
     max-width: 230px;
@@ -40,22 +40,17 @@
     width: 32px;
     height: 32px;
     border-radius: 50%;
-    transition-property: background-color, fill;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition: background-color, $function-transition;
 }
 .button-icon {
     @extend %position-center;
-    transition-property: background-color, fill;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition: background-color, $function-transition;
 }
 .social-link-btn:hover,
 .social-link-btn:focus,
 .button-icon:hover,
 .button-icon:focus {
     background-color: $title-text-color;
-    fill: $title-text-color;
 }
 .contact {
     display: flex;
@@ -68,7 +63,6 @@
     font-size: 12px;
     line-height: 186%;
     text-align: right;
-    color: #000000;
 }
 .phone {
     color: $title-text-color;
@@ -83,7 +77,6 @@
     content: "";
     position: absolute;
     display: inline-block;
-
     width: 100%;
     outline: 1px solid #E1E1E1;
 }
@@ -96,5 +89,5 @@
     font-size: 14px;
     line-height: 152%;
     text-align: center;
-    color: #907E82;
+    color: $primary-text-color;
 } 
