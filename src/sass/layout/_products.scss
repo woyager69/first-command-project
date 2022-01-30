@@ -1,63 +1,41 @@
-
-    
 .products__headind-label {
-font-family: titan one;
-font-style: normal;
-font-weight: normal;
-font-size: 30px;
-line-height: 34px;
-text-align: center;
-letter-spacing: 0.04em;
-text-transform: uppercase;
-color: #FFA5BA;
+    font-family: titan one;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 30px;
+    line-height: 34px;
+    text-align: center;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: #FFA5BA;
 }
 .products__heading{
     font-family: Titan One;
-font-style: normal;
-font-weight: normal;
-font-size: 58px;
-line-height: 66px;
-text-align: center;
-letter-spacing: 0.06em;
-text-transform: uppercase;
-
-color: #D41443;
-
+    font-style: normal;
+    font-weight: normal;
+    font-size: 58px;
+    line-height: 66px;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: #D41443;
 }
-.products-block__menu{
-    
+.products-block__menu{    
     width: 330px;
     background: #FFB8CA;
-border-radius: 24px;
-
+    border-radius: 24px;
 }
-
-
-
 .product-menu__item__text{
     font-family: Titan One;
-font-style: normal;
-font-weight: normal;
-font-size: 30px;
-line-height: 34px;
-text-align: center;
-letter-spacing: 0.04em;
-text-transform: uppercase;
-padding-top: 163px;
-color: #FFFFFF;
-margin-top: 225px;
-}
-
-.ice-coffee{
-    background-image: url("/images/product-2d-335@1x.png");
-    background-position-x: center;
-   position:absolute;
-    margin-left: auto;
-    margin-right: auto;
-    width: 335px;
-    height: 335px;
-    margin-bottom: 38px;
-    background-repeat: no-repeat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 30px;
+    line-height: 34px;
+    text-align: center;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    padding-top: 185px;
+    color: #FFFFFF;
 }
 .product-menu__item__decoration{
     font-family: Titan One;
@@ -69,79 +47,107 @@ margin-top: 225px;
     letter-spacing: 0.04em;
     text-transform: uppercase;
     margin-top: 32px;
-
-    
     color: #FFFFFF;
 }
-.products-menu{
-    display: flex;
+.products-menu{ 
+    @media screen and (min-width: 768px) {
+        display: flex;
+        margin: -10px;
+        padding: 225px 0;
+    }
+    @media screen and (min-width: 1280px) {
+        margin: -15px;
+    }
 }
-.products-menu__item{
-    width: 329px;
+.products-menu__item {
+    position: relative;
+    max-width: 280px;
+    margin-top: 225px;
+    @media screen and (min-width: 768px) {
+        flex-basis: calc((100% - 60px) / 3);
+        margin: 10px;
+    }
+    @media screen and (min-width: 1280px) {
+        flex-basis: calc((100% - 90px) / 3);
+        margin: 15px;
+        max-width: 100%;
+    }
 }
 .products-item__block{
-    background:#FFB8CA ;
-    width: 329px;
-height: 525px;
-border-radius: 24px;
-
+    background:#FFB8CA;
+    border-radius: 24px;
+    padding-bottom: 40px;
 }
 .background-ice-coffee{
     background-color: $second-product-color;
 }
 .product-menu__item__text::after{
-
-content: "...";
-display: block;
-padding-top:25px ;
-
+    content: "...";
+    display: block;
+    padding-top:25px ;
 }
 .products-item__block > p{
     font-family: DM Sans;
-font-style: normal;
-font-weight: bold;
-font-size: 16px;
-line-height: 176%;
-/* or 28px */
-margin-top: 30px;
-text-align: center;
-letter-spacing: 0.04em;
-
-color: #FFFFFF;
-}
-.products-menu__item:not(:first-child){
-    margin-left: 28px;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 176%;
+    margin-top: 30px;
+    text-align: center;
+    letter-spacing: 0.04em;
+    color: #FFFFFF;
 }
 .background-MILKSHAKES{
     background-color: $third-product-color;
 }
-.milkshakes{
-    background-image: url("/images/product-3d-335@1x.png");
-    background-position-x: center;
-   position: absolute;
-    margin-left: auto;
-    margin-right: auto;
-    width: 335px;
-    height: 335px;
-    margin-bottom: 38px;
-    background-repeat: no-repeat;
-
-}
 .ice-cream{
     background-image: url("/images/product-1d-335@1x.png");
     background-position-x: center;
-   position: absolute;
-    margin-left: auto;
-    margin-right: auto;
-    width: 335px;
+    position: absolute;
+    bottom: 100%;
+    transform: translateY(50%);
+    min-width: 280px;
     height: 335px;
-    margin-bottom: 38px;
-    background-repeat: no-repeat;
+    @media screen and (min-width: 768px) {
+        min-width: 220px;
+    }
+    @media screen and (min-width: 1280px) {
+        min-width: 330px;
+    }
+}
+.ice-coffee{
+    background-image: url("/images/product-2d-335@1x.png");
+    background-position-x: center;
+    position:absolute;
+    bottom: 100%;
+    transform: translateY(50%);
+    min-width: 280px;
+    height: 335px;
+    @media screen and (min-width: 768px) {
+        min-width: 220px;
+    }
+    @media screen and (min-width: 1280px) {
+        min-width: 330px;
+    }
+}
+.milkshakes{
+    background-image: url("/images/product-3d-335@1x.png");
+    background-position-x: center;
+    position: absolute;
+    bottom: 100%;
+    transform: translateY(50%);
+    min-width: 280px;
+    height: 335px;
+    @media screen and (min-width: 768px) {
+        min-width: 220px;
+    }
+    @media screen and (min-width: 1280px) {
+        min-width: 330px;
+    }
 }
 .products__block {
     display: flex;
     flex-wrap: wrap;
-
 }
 .product-menu__item__information{
     font-family: DM SANS;
@@ -152,14 +158,35 @@ color: #FFFFFF;
     text-align: center;
     letter-spacing: 0.04em;
     color: #FFFFFF;
-    margin-left: auto;
-    margin-right: auto;
-    width: 241px;
     margin-top: 32px;
-
 }
-.products__menu{
-    width: 335px;
-  
-
+.card-text {
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 152%;
+    text-align: center;
+    letter-spacing: 0.04em;
+    padding: 0 40px;
+    line-height: 176%;
+    @media screen and (min-width: 768px) and (max-width: 1279px) {
+        padding: 0 10px;
+    }
+}
+.box {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 60px;
+    border: 0px solid ;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: white;
+}
+.arrow {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    fill: $title-text-color;
 }
