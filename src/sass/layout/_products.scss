@@ -16,6 +16,7 @@ width: max-content;
 }
 
 .products__heading{
+    @media ( min-width:768px)   {
     font-family: Titan One;
 font-style: normal;
 font-weight: normal;
@@ -28,6 +29,7 @@ width: max-content;
 margin-right: auto;
 margin-left: auto;
 color: #D41443;
+}
 @media ( min-width:320px)   {
     
 font-family: Titan One;
@@ -76,22 +78,32 @@ margin-right: auto;
 }
 
 .ice-coffee{
-    background-image: url("/images/product-2d-335@1x.png");
+    
     background-position-x: center;
+    z-index: 100px;
    position:absolute;
-    margin-left: auto;
-    margin-right: auto;
-    width: 335px;
-    height: 335px;
+   
+    
     margin-bottom: 38px;
     background-repeat: no-repeat;
     @media ( min-width:320px)   {
         width: 280px;
+        height: 280px;
         background-image: url("/images/product-2m-249@1x.png");
+        margin-top: 100px;
     }
     @media ( min-width:768px)   {
         width: 220px;
         background-image: url("/images/product-2t-220@1x.png");
+        margin-top: 100px;
+    }
+    @media ( min-width:1200px){
+        background-image: url("/images/product-2d-335@1x.png");
+        margin-top: 0px;
+        width: 335px;
+    height: 335px;
+    margin-left: auto;
+    margin-right: auto;
     }
 
 
@@ -111,9 +123,8 @@ margin-right: auto;
     color: #FFFFFF;
 }
 .products-menu{
-    
-   
-    
+    display: flex;
+    flex-wrap: wrap;
     margin-right: 20px;
     @media( min-width:320px) {
         width: 280px;
@@ -131,6 +142,7 @@ margin-right: auto;
   }
 
 .products-menu__item{
+    /* height: 600px; */
     width: 329px;
     margin-left: 20px;
     @media ( min-width:320px)  {
@@ -141,17 +153,27 @@ margin-right: auto;
         width: 220px;
         margin-left: 20px;
     }
+    @media ( min-width:1200px)  {
+        width: 340px;
+        margin-left: 20px;
+    }
 }
 .products-item__block{
+    
     background:#FFB8CA ;
-    width: 329px;
-height: 525px;
-border-radius: 24px;
+   
+    height: 525px;
+    border-radius: 24px;
 @media ( min-width:320px)   {
     width: 280px;
+    /* margin-top: 200px; */
+    
 }
 @media ( min-width:768px)   {
     width: 220px;
+}
+@media(min-width:1200px){
+    width: 329px;
 }
 
 }
@@ -182,7 +204,12 @@ color: #FFFFFF;
 margin: 30px auto;
 @media(min-width:220px){
     width: 220px;
-    margin: 0px 0px;
+    margin-left: auto;
+    margin-right: auto;
+}
+@media (min-width:1200px) {
+    margin-left: auto;
+    margin-right: auto;
 }
 }
 
@@ -193,7 +220,8 @@ margin: 30px auto;
     background-color: $third-product-color;
 }
 .milkshakes{
-    background-image: url("/images/product-3d-335@1x.png");
+    
+    
     background-position-x: center;
    position: absolute;
     margin-left: auto;
@@ -205,29 +233,49 @@ margin: 30px auto;
     @media ( min-width:320px)   {
         width: 320px;
         background-image: url("/images/product-3m-249@1x.png");
+        margin-top: 100px;
     }
     @media ( min-width:768px)   {
         width: 220px;
         background-image: url("/images/product-3t-220@1x.png");
+        margin-top: 100px;
+    }
+    @media(min-width:1200px){
+        background-image: url("/images/product-3d-335@1x.png");
+        margin-top: 0px;
+        width: 335px;
+    height: 335px;
+    margin-left: auto;
+    margin-right: auto;
     }
 }
 .ice-cream{
-    background-image: url("/images/product-1d-335@1x.png");
+    
     background-position-x: center;
    position: absolute;
     margin-left: auto;
     margin-right: auto;
     width: 335px;
     height: 335px;
-    margin-bottom: 38px;
+ /*    margin-bottom: 38px; */
     background-repeat: no-repeat;
     @media ( min-width:320px)   {
-        width: 320px;
+        width: 280px;
         background-image: url("/images/product-1m-249@1x.png");
+        margin-top: 100px;
     }
     @media ( min-width:768px)   {
         width: 220px;
         background-image: url("/images/product-1t-220@1x.png");
+        margin-top: 100px;
+    }
+    @media(min-width:1200px){
+        background-image: url("/images/product-1d-335@1x.png");
+        margin-top: 0px;
+        width: 335px;
+    height: 335px;
+    margin-left: auto;
+    margin-right: auto;
     }
 }
 .product-menu__item-link{
@@ -246,12 +294,12 @@ margin: 30px auto;
 .product-menu__item-link > a > svg{
     fill: $second-accent-color;
 }
-
+/* 
 .products__block {
-    display: flex;
-    flex-wrap: wrap;
-
-}
+      display: flex;
+    flex-wrap: wrap; 
+ 
+} */
 .product-menu__item__information{
     font-family: DM SANS;
     font-style: normal;
