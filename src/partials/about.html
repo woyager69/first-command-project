@@ -1,5 +1,6 @@
 <section class="about">
     <div class="background">
+
         <div class="container">
             <p class="about__text" id="about">TRADITION AND LOVE</p>
             <h2 class="about__title">HOW IT'S MADE?</h2>
@@ -24,9 +25,39 @@
                     <p class="about-text-one">Fusce ut velit laoreet, tempus arcu eu, molestie tortor. Nam vel justo cursus, faucibus lorem eget, egestas eros. Maecenas eleifend erat at justo fringilla.</p>
                     <p class="about-text-two">Curabitur lacinia enim at ex blandit, vel pellentesque odio elementum. Mauris rhoncus orci in imperdiet placerat. Vestibulum euismod nisl suscipit ligula volutpat, a feugiat urna maximus. Cras massa nibh, tincidunt.</p>
                     <p class="about-text-two-indent">Aliquam erat volutpat. Aenean accumsan.</p>
-                    <button type="button" class="button-open">
-                        <span class="button-style">Read more</span>
+                
+                  <button data-modal-open class="about-modal__open button" type="button">
+                    <span>Read more</span>
+                   
+
                     </button>
+                </div>
+                <!--Modal-->
+                <div class="backdrop is-hidden" data-modal>
+           
+                <div class="about-modal">
+                    <button class="about-modal__close" data-modal-close>
+
+                    <b>Close</b>
+                    </button>
+                        <form class="about-form">
+                            <h3 class="about-form__title">Tam laeti sumus te videre!</h3>
+                            <p class="about-form__text">Ubi tua dulcia somnia vera</p>
+                            <div class="about-form-box">
+                            <p class="about-form__advertising">
+                                <span class="about-form__advertising--fatty">Potesne existimare habere somnia vestra glaciem cremor? Facere possumus.</span> 
+                                <br>Tam laeti sumus te videre!
+                                Ubi tua dulcia somnia vera
+                                Potesne existimare habere somnia vestra glaciem cremor? Facere possumus.
+                                Ice Somnium Tractat inserviebat suo praemio victori homemade saporibus glaciei cremoris ad locales et visitatores pariter cum 2018. Celebris nostra glacies cremor notus est propter eius textura, aequilibritatem cremoris, suavitatis, et saporis qui temporis experimentum stabat.
+                
+                                Expectamus per multos annos servientes vicinitati nostrae venire!
+                            </p>
+                           <img class="about-form-foto" src="./images/icecream-modal.jpg" alt="ice cream">
+                        </div>
+                    </form>
+                        
+                    </div>
                 </div>
             </div>
         </div>
