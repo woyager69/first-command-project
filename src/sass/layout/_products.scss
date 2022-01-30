@@ -77,8 +77,8 @@ margin-right: auto;
 }
 }
 
-.ice-coffee{
-    
+.ice-coffee::before{
+    content: '';
     background-position-x: center;
     z-index: 100px;
    position:absolute;
@@ -219,8 +219,8 @@ margin: 30px auto;
 .background-MILKSHAKES{
     background-color: $third-product-color;
 }
-.milkshakes{
-    
+.milkshakes::before{
+    content: '';
     
     background-position-x: center;
    position: absolute;
@@ -249,8 +249,8 @@ margin: 30px auto;
     margin-right: auto;
     }
 }
-.ice-cream{
-    
+.ice-cream::before{
+    content: '';
     background-position-x: center;
    position: absolute;
     margin-left: auto;
