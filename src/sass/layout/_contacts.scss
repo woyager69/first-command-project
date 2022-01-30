@@ -1,5 +1,20 @@
-// .section-contacts {
-// }
+.section-contacts {
+  background: linear-gradient(to bottom, #FFFFFF 84px, $primary-background-color 84px);
+
+  @media screen and (min-width: 768px) {
+    background: linear-gradient(to bottom, #FFFFFF 78px, $primary-background-color 78px);
+  }
+  
+  @media screen and (min-width: 1280px) {
+    background-image:  url("../images/spots-left@1x.png"), url("../images/spots-right@1x.png"), linear-gradient(to bottom, #FFFFFF 102px, $primary-background-color 102px),;
+      @media screen and (min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
+          background-image: url("../images/spots-left@2x.png"), url("../images/spots-right@2x.png"), linear-gradient(to bottom, #FFFFFF 102px, $primary-background-color 102px),;
+      }
+    background-repeat: no-repeat;
+    background-position: left, right, center;
+    background-size: contain;
+  }
+}
 
 .contacts {
   padding: 0 30px;
@@ -229,9 +244,9 @@
   border-radius: 22px;
   height: 44px;
   padding: 0 17px;
-  &:first-child {
-    margin-bottom: 10px;
-  }
+    &:first-child {
+      margin-bottom: 10px;
+    }
 
   font-weight: bold;
   font-size: 16px;
