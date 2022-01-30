@@ -1,5 +1,6 @@
 .footer-section {
     padding-top: 113px;
+    background-color: $primary-background-color;
 }
 .footer-text {
     max-width: 230px;
@@ -75,6 +76,24 @@
 .button-icon:hover,
 .button-icon:focus {
     background-color: $title-text-color;
+}
+.button-link {
+    transition-property: transform;
+}
+.icon-contact:hover .button-link {
+    transform: rotate(-360deg) scale(1.5);
+}
+.button-link:nth-child(1) {
+    transition-property: transform;
+    transition-duration: 1000ms;
+}
+.button-link:nth-child(2) {
+    transition-property: transform;
+    transition-duration: 2000ms;
+}
+.button-link:nth-child(3) {
+    transition-property: transform;
+    transition-duration: 3000ms;
 }
 .contact {
     display: flex;
