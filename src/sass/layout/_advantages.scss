@@ -1,3 +1,7 @@
+.advantage-section {
+    background: $primary-background-color;
+    padding-top: 66px;
+}
 .header-advantages_hiden-elem {
     position: fixed;
     transform: scale(0);
@@ -63,7 +67,7 @@
     font-size: 12px;
     line-height: 170%;
     letter-spacing: 0.04em;
-    color: #000000;
+    color: #000;
     padding: 15px 0 40px 0;
     max-width: 260px;
     text-transform: none;
