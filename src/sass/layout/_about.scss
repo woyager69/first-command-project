@@ -129,6 +129,9 @@
     color: $primary-text-color;
   }
 .about-modal__open{
+    display: flex;
+    justify-content:space-evenly;
+    
     width: 176px;
     height: 44px;
     background: #FFFFFF;
@@ -147,6 +150,10 @@
 .about-modal__open:hover{
         background: $first-accent-color;
     }
+.about-modal-icon{
+   fill: $title-text-color;
+    
+}
 .about-modal{
     position: absolute;
     top: 50%;
@@ -195,8 +202,8 @@
     top: 8px;
     right: 8px;
     width: 110px;
-    height: 50px;
-    border-radius: 50%;
+    height: 25px;
+    border-radius: 5px;
     cursor: pointer;
     background: #72f3f37a;
     border    : 1px solid rgba(0, 0, 0, 0.1);
@@ -205,11 +212,25 @@
     justify-content: center;
     align-items: center;
     transition: $function-transition;
+    transform-style: preserve-3d;
 }
-.about-modal__close:focus,
-.about-modal__close:hover{
-    background:#eedd45bb ;
+.about-modal__close::after{
+    top: -100%;
+	left: 0;
+	width: 100%;
+	position: absolute;
+	background: #3a9999;
+	border-radius: 5px;
+    color: #FFFFFF;
+	content: 'Click';
+	transform-origin: left bottom;
+	transform: rotateX(90deg)
 }
+.about-modal__close:hover {
+	transform-origin: center bottom;
+	transform: rotateX(-90deg) translateY(100%);
+}
+
 .about-form{
     margin: 15px;
     
