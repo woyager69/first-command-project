@@ -58,6 +58,7 @@
   display: flex;
   align-items: center;
   padding: 12px 37px;
+  margin: 0 auto;
 
   background-color: white;
   color: $title-text-color;
@@ -419,7 +420,7 @@
   height: 344px;
   background-color: $label-text-color;
   border-radius: 100%;
-  overflow: hidden;
+  overflow-x: hidden;
 
   position: absolute;
   top: 83px;
