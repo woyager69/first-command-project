@@ -99,7 +99,7 @@
         </ul>
 
         <ul class="contacts__buttons">
-            <button type="button" class="contacts__btn contacts__btn--modal">Our Locations
+            <button type="button" class="contacts__btn contacts__btn--modal" data-modal-open>Our Locations
                 <svg class="contacts__icon contacts__icon--modal" width="8" height="10" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="m1.616 1 4.428 4-4.428 4" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
                 </svg>
@@ -110,5 +110,12 @@
                 </svg>
             </button>
         </ul>
+
+        <div class="backdrop hidden" data-modal>
+            <div class="modal">
+                <span class="modal__icon" data-modal-close></span>
+                <img srcset="" alt="Map" width="" height="">
+            </div>
+        </div>
     </div>
 </section>
