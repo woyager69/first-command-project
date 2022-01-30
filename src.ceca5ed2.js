@@ -3,4 +3,4 @@ parcelRequire=function(e,r,t,n){var i,o="function"==typeof parcelRequire&&parcel
 },{"/home/runner/work/first-command-project/first-command-project/src/images/product-2d-335@1x.png":[["product-2d-335@1x.ab0a8ec8.png","IfDm"],"IfDm"],"/home/runner/work/first-command-project/first-command-project/src/images/product-3d-335@1x.png":[["product-3d-335@1x.f7a1f87b.png","eOMD"],"eOMD"],"/home/runner/work/first-command-project/first-command-project/src/images/product-1d-335@1x.png":[["product-1d-335@1x.e2feae57.png","q8ve"],"q8ve"],"./../images/quotes.svg":[["quotes.d42deeb5.svg","E7dR"],"E7dR"],"./../images/dotes.svg":[["dotes.3bccb3c6.svg","Hk0s"],"Hk0s"],"./../images/home.svg":[["home.39aa8f0a.svg","VKcl"],"VKcl"]}],"Focm":[function(require,module,exports) {
 "use strict";require("./sass/main.scss");var i=new Swiper(".mySwiper",{pagination:{el:".swiper-pagination",clickable:!0}});
 },{"./sass/main.scss":"clu1"}]},{},["Focm"], null)
-//# sourceMappingURL=/first-command-project/src.b8017dad.js.map
+//# sourceMappingURL=/first-command-project/src.ceca5ed2.js.map
