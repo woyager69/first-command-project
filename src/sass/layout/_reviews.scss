@@ -1,15 +1,14 @@
 .customer-reviews {
-    margin-top: 80px;
-    margin-bottom: 86px;
+    padding-top: 80px;
+    padding-bottom: 86px;
     @media screen and (min-width: 768px) {
-      margin-top: 121px;
-      margin-bottom: 119px;
+      padding-top: 121px;
+      padding-bottom: 119px;
     }
     @media screen and (min-width: 1280px) {
-      margin-top: 123px;
-      margin-bottom: 132px;
+      padding-top: 123px;
+      padding-bottom: 132px;
     }
-
   }
   .customer-reviews__item {
     display: flex;
@@ -19,10 +18,6 @@
   }
   .customer-reviews__image {
     margin-bottom: 30px;
-    display: block;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
 }
   
   .customer-reviews__wrapper {
@@ -50,16 +45,18 @@
   
     background-image: linear-gradient(
       0deg,
-      #e1e1e1 1%,
-      transparent 1%,
-      transparent 50%,
-      #e1e1e1 50%,
-      #e1e1e1 51%,
-      transparent 51%,
-      transparent 100%
+    $border-color 1%,
+    transparent 1%,
+    transparent 50%,
+    $border-color 50%,
+    $border-color 51%,
+    transparent 51%,
+    transparent 100%
     );
 
-  
+    background-size: 62px 62px;
+    z-index: 1;
+
     @media screen and (min-width: 768px) {
       font-size: 14px;
       line-height: calc(31 / 14);
@@ -82,11 +79,10 @@
       background-repeat: no-repeat;
       background-size: contain;
   
-      z-index: -1;
-  
       @media screen and (min-width: 480px) {
         left: -20px;
       }
+      z-index: -1;
     }
   }
   .customer-reviews__location {
@@ -118,33 +114,9 @@
     }
   }
 
-//   .swiper {
-//     width: 100%;
-//     height: 100%;
-// }
-
-// .swiper-slide {
-//     text-align: center;
-//     font-size: 18px;
-//     background: #fff;
-
-//     /* Center slide text vertically */
-//     display: -webkit-box;
-//     display: -ms-flexbox;
-//     display: -webkit-flex;
-//     display: flex;
-//     -webkit-box-pack: center;
-//     -ms-flex-pack: center;
-//     -webkit-justify-content: center;
-//     justify-content: center;
-//     -webkit-box-align: center;
-//     -ms-flex-align: center;
-//     -webkit-align-items: center;
-//     align-items: center;
-// }
-
 .swiper-pagination-bullet-active {
     background-image: url('../images/home.svg');
+    background-color: transparent;
     background-size: cover;
     border-radius: unset;
     width: 12px;
