@@ -128,7 +128,7 @@
   height: 100vh;
 
   margin: 0;
-  padding: 60px 21px;
+  padding: 60px 24px;
 
   background-color: $menu-background-color;
   position: absolute;
@@ -454,29 +454,23 @@
 
   position: absolute;
   top: 83px;
-  left: 36px;
+  right: -19%;
   @media screen and (min-width: 768px) {
     width: 324px;
     height: 322px;
     border-radius: 100%;
     top: 7%;
-    left: 39%;
+    right: 19%;
   }
   @media screen and (min-width: 1280px) {
     width: 538px;
     height: 538px;
     border-radius: 100%;
 
-    left: 37%;
+    right: 21%;
   }
 }
 // imgages
-.img-milk {
-  @media screen and (min-width: 768px) {
-    width: 188px;
-    height: 191px;
-  }
-}
 
 .img-icecream {
   position: absolute;
@@ -486,7 +480,7 @@
     right: 36%;
   }
   @media screen and (min-width: 1280px) {
-    right: 450px;
+    right: 35%;
   }
 }
 .img-girl {
@@ -500,6 +494,6 @@
   }
   @media screen and (min-width: 768px) {
     bottom: 0;
-    right: 109px;
+    right: 8.5%;
   }
 }

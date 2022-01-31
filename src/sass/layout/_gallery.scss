@@ -27,7 +27,7 @@
 .grid-item {
   border-radius: 14%;
   display: inline-block;
-  background-color: $border-color;
+  // background-color: $border-color;
   transition: transform $function-transition;
   &:hover {
     transform: scale(2);
