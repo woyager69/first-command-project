@@ -1,20 +1,24 @@
 
 .advantage-section {
     background: $primary-background-color;
-    padding-top: 66px;
+    padding: 40px 0 100px 0;
+    @media screen and (min-width: 768px) {
+      padding: 66px 0 140px 0;
+    }
+    @media screen and (min-width: 1280px) {
+      padding-top: 40px;
+    }
 }
-
 .list-reviews {
-  margin: 40px 0;
   @media screen and (min-width: 768px) {
     display: flex;
-    margin: -30px;
+    margin: 0 -30px;
   }
 }
 .item-review {
   @media screen and (min-width: 768px) {
     flex-basis: calc((100% - 90px) / 3);
-    margin: 30px;
+    margin: 0 30px;
   }
 }
 .item-review::before {
@@ -72,7 +76,6 @@
     @media screen and (min-width: 768px) {
         font-size: 14px;
         line-height: 174%;
-        padding: 15px 0 140px 0;
     }
     @media screen and (min-width: 1280px) {
         font-size: 16px;
@@ -80,4 +83,11 @@
         letter-spacing: 0.02em;
     }
 }
-
+.item-review:nth-child(3) .text-item:last-child {
+  padding-bottom: 0;
+}
+.item-review .text-item:last-child {
+  @media screen and (min-width: 768px) {
+    padding-bottom: 0;
+  }
+}
