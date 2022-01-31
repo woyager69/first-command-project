@@ -83,8 +83,10 @@
 
 .about__img {
   max-width: 280px;
+  margin-bottom: 46px;
   @media screen and (min-width: 768px) {
     max-width: 340px;
+    margin-bottom: 0;
   }
   @media screen and (min-width: 1280px) {
     max-width: 516px;
