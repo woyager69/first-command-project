@@ -1,24 +1,25 @@
 <section class="section section-contacts">
-    <h2 class="section__title">Our contacts</h2>
+    <h2 class="section__title hidden">Our contacts</h2>
 
     <div class="container">
         <ul class="contacts">
+
             <li class="contacts__item">
                 <div class="contacts__card">
                     <p class="contacts__label">CAFE</p>
 
                     <h3 class="contacts__title">Chicago</h3>
-                    <p>Fusce ut velit laoreet, tempus arcu molestie vulputate</p>
+                    <p class="contacts__text">Fusce ut velit laoreet, tempus arcu molestie vulputate</p>
 
-                    <div class="">
-                        <ul class="">
-                            <li class="">
-                                <p>Monday - Friday</p>
-                                <p>06:00 AM - 10:00 PM</p>
+                    <div class="contacts__schedule">
+                        <ul class="schedule">
+                            <li class="schedule__item">
+                                <p class="schedule__title">Monday - Friday</p>
+                                <p class="schedule__time">06:00 AM - 10:00 PM</p>
                             </li>
-                            <li class="">
-                                <p>Saturday - Sunday</p>
-                                <p>08:00 AM - 16:00 PM</p>
+                            <li class="schedule__item">
+                                <p class="schedule__title">Saturday - Sunday</p>
+                                <p class="schedule__time">08:00 AM - 16:00 PM</p>
                             </li>
                         </ul>
                     </div>
@@ -33,22 +34,23 @@
                     </ul>
                 </div>
             </li>
+
             <li class="contacts__item">
                 <div class="contacts__card">
                     <p class="contacts__label contacts__label--green">FOOD TRUCK</p>
 
                     <h3 class="contacts__title">Los Angeles</h3>
-                    <p>Fusce ut velit laoreet, tempus arcu molestie vulputate</p>
+                    <p class="contacts__text">Fusce ut velit laoreet, tempus arcu molestie vulputate</p>
 
-                    <div class="">
-                        <ul class="">
-                            <li class="">
-                                <p>Monday - Friday</p>
-                                <p>06:00 AM - 10:00 PM</p>
+                    <div class="contacts__schedule">
+                        <ul class="schedule">
+                            <li class="schedule__item">
+                                <p class="schedule__title">Monday - Friday</p>
+                                <p class="schedule__time">06:00 AM - 10:00 PM</p>
                             </li>
-                            <li class="">
-                                <p>Saturday - Sunday</p>
-                                <p>08:00 AM - 16:00 PM</p>
+                            <li class="schedule__item">
+                                <p class="schedule__title">Saturday - Sunday</p>
+                                <p class="schedule__time">08:00 AM - 16:00 PM</p>
                             </li>
                         </ul>
                     </div>
@@ -63,22 +65,23 @@
                     </ul>
                 </div>
             </li>
+
             <li class="contacts__item">
                 <div class="contacts__card">
                     <p class="contacts__label">CAFE</p>
 
                     <h3 class="contacts__title">New York</h3>
-                    <p>Fusce ut velit laoreet, tempus arcu molestie vulputate</p>
+                    <p class="contacts__text">Fusce ut velit laoreet, tempus arcu molestie vulputate</p>
 
-                    <div class="">
-                        <ul class="">
-                            <li class="">
-                                <p>Monday - Friday</p>
-                                <p>06:00 AM - 10:00 PM</p>
+                    <div class="contacts__schedule">
+                        <ul class="schedule">
+                            <li class="schedule__item">
+                                <p class="schedule__title">Monday - Friday</p>
+                                <p class="schedule__time">06:00 AM - 10:00 PM</p>
                             </li>
-                            <li class="">
-                                <p>Saturday - Sunday</p>
-                                <p>08:00 AM - 16:00 PM</p>
+                            <li class="schedule__item">
+                                <p class="schedule__title">Saturday - Sunday</p>
+                                <p class="schedule__time">08:00 AM - 16:00 PM</p>
                             </li>
                         </ul>
                     </div>
@@ -94,9 +97,27 @@
                 </div>
             </li>
         </ul>
+
         <ul class="contacts__buttons">
-            <button type="button">Our Locations</button>
-            <button type="button">Franchise</button>
+            <button type="button" class="contacts__btn contacts__btn--modal" data-modal-open>Our Locations
+                <svg class="contacts__icon contacts__icon--modal" width="8" height="10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="m1.616 1 4.428 4-4.428 4" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+            </button>
+            <button type="button" class="contacts__btn">Franchise
+                <svg class="contacts__icon" width="8" height="10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="m1.616 1 4.428 4-4.428 4" stroke="#D41443" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+            </button>
         </ul>
+
+        <div class="backdrop hidden" data-modal>
+            <div class="modal">
+                <span class="modal__close" data-modal-close></span>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3583.964927904745!2d-80.3652785849728!3d26.06740258349892!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88d9a73480b1e267%3A0xe39376fac312602b!2s4487%20Weston%20Rd%2C%20Weston%2C%20FL%2033331!5e0!3m2!1sen!2sus!4v1635145665325!5m2!1sen!2sus" 
+                width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy">
+                </iframe>
+            </div>
+        </div>
     </div>
 </section>
