@@ -136,6 +136,7 @@
   top: 0;
   right: -100%;
   visibility: hidden;
+  overflow: hidden;
 
   z-index: 99;
   transition: right $function-transition;
@@ -395,6 +396,7 @@
 
   position: absolute;
   transform: translate(50%, -25%);
+
   @media screen and (min-width: 1280px) {
     width: 30px;
     height: 30px;
@@ -455,6 +457,7 @@
   position: absolute;
   top: 83px;
   right: -19%;
+  animation: circle 550ms ease;
   @media screen and (min-width: 768px) {
     width: 324px;
     height: 322px;
@@ -468,6 +471,17 @@
     border-radius: 100%;
 
     right: 21%;
+  }
+}
+@keyframes circle {
+  0% {
+    transform: scale(0, 0);
+  }
+  50% {
+    transform: scale(1.2, 1.2);
+  }
+  100% {
+    transform: scale(1, 1);
   }
 }
 // imgages
