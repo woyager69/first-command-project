@@ -1,4 +1,4 @@
-<section class="about">
+<section class="about" id="about-us">
   <div class="background">
     <div class="container">
       <p class="about__text" id="about">TRADITION AND LOVE</p>
@@ -19,21 +19,47 @@
               media="(min-width: 320px)"
             />
 
-            <img src="images/about-d-516@1x.png" alt="cow" />
-          </picture>
-        </div>
 
-        <div class="about-desc">
-          <p class="about-text-one">
-            Fusce ut velit laoreet, tempus arcu eu, molestie tortor. Nam vel justo cursus, faucibus
-            lorem eget, egestas eros. Maecenas eleifend erat at justo fringilla.
-          </p>
-          <p class="about-text-two">
-            Curabitur lacinia enim at ex blandit, vel pellentesque odio elementum. Mauris rhoncus
-            orci in imperdiet placerat. Vestibulum euismod nisl suscipit ligula volutpat, a feugiat
-            urna maximus. Cras massa nibh, tincidunt.
-          </p>
-          <p class="about-text-two-indent">Aliquam erat volutpat. Aenean accumsan.</p>
+        <div class="container">
+            <p class="about__text" id="about">TRADITION AND LOVE</p>
+            <h2 class="about__title">HOW IT'S MADE?</h2>
+            <div class="about__box">
+                <div class="about__img">
+                    <picture>
+                        <source srcset="images/about-d-516@1x.png 1x,
+                                        images/about-d-1032@2x.png 2x"
+                                media="(min-width: 1280px)" />
+                        <source srcset="images/about-t-340@1x.png 1x,
+                                        images/about-t-680@2x.png 2x"
+                                media="(min-width: 768px)"/>
+                        <source srcset="images/about-m-280@1x.png 1x,
+                                        images/about-m-560@2x.png 2x"
+                                media="(min-width: 480px)"/>
+
+                        <img src="images/about-d-516@1x.png" alt="cow">
+                    </picture>
+                </div>
+
+                <div class="about-desc">
+                    <p class="about-text-one">Fusce ut velit laoreet, tempus arcu eu, molestie tortor. Nam vel justo cursus, faucibus lorem eget, egestas eros. Maecenas eleifend erat at justo fringilla.</p>
+                    <p class="about-text-two">Curabitur lacinia enim at ex blandit, vel pellentesque odio elementum. Mauris rhoncus orci in imperdiet placerat. Vestibulum euismod nisl suscipit ligula volutpat, a feugiat urna maximus. Cras massa nibh, tincidunt.</p>
+                    <p class="about-text-two-indent">Aliquam erat volutpat. Aenean accumsan.</p>
+                
+                  <button data-modal-about-open class="about-modal__open button" type="button">
+                    <span>Read more</span>
+                    <svg width="8" height="10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="m1.616 1 4.428 4-4.428 4" stroke="#D41443" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                    </svg>
+
+                    </button>
+                </div>
+                <!--Modal-->
+                <div class="backdrop-about is-about" data-modal-about>
+           
+                <div class="about-modal">
+                    <button class="about-modal__close" data-modal-about-close>
+
 
           <button data-modal-about-open class="about-modal__open button" type="button">
             <span>Read more</span>
