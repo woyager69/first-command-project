@@ -1,5 +1,5 @@
 .products {
-    padding: 120px 0 100px 0;
+    padding: 120px 0 98px 0;
     @media screen and (min-width: 768px) {
         padding-bottom: 110px; 
     }
@@ -56,11 +56,11 @@
     text-align: center;
     letter-spacing: 0.04em;
     text-transform: uppercase;
-    padding-top: 185px;
+    padding-top: 155px;
     color: #FFFFFF;
 }
 .products-menu{ 
-        padding-top: 144px;
+        padding-top: 140px;
     @media screen and (min-width: 768px) {
         display: flex;
         margin: -10px;
@@ -97,7 +97,7 @@
 .product-menu__item__text::after{
     content: "...";
     display: block;
-    padding-top: 25px;
+    padding-top: 20px;
 }
 .ice-coffee{
     background-color: $second-product-color;
