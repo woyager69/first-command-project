@@ -120,7 +120,6 @@
     content: url("/images/product-1m-249@1x.png");
     position: absolute;
     bottom: 100%;
-    left: 5%;
     transform: translateY(50%);
     @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
         .ice-cream::before {
@@ -129,7 +128,6 @@
     }
     @media screen and (min-width: 768px) {
         content: url("/images/product-1t-220@1x.png");
-        left: 0;
         @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
             .ice-cream::before {
                 content: url("/images/product-1t-440@2x.png");
@@ -149,7 +147,6 @@
     content: url("/images/product-2m-249@1x.png");
     position:absolute;
     bottom: 100%;
-    left: 5%;
     transform: translateY(50%);
     @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
         .ice-coffee::before {
@@ -158,7 +155,6 @@
     }
     @media screen and (min-width: 768px) {
         content: url("/images/product-2t-220@1x.png");
-        left: 0;
         @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
             .ice-coffee::before {
                 content: url("/images/product-2t-440@2x.png");
@@ -178,7 +174,6 @@
     content: url("/images/product-3m-249@1x.png");
     position: absolute;
     bottom: 100%;
-    left: 5%;
     transform: translateY(50%);
     @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
         .milkshakes::before { 
@@ -187,7 +182,6 @@
     }
     @media screen and (min-width: 768px) {
         content: url("/images/product-3t-220@1x.png");
-        left: 0;
         @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
             .milkshakes::before {
                 content: url("/images/product-3t-440@2x.png");
