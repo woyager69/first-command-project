@@ -269,86 +269,86 @@
 .about-modal-icon {
   fill: $title-text-color;
 }
+
+
+
+// modal //
+.backdrop {
+  position: fixed;
+  z-index: 10;
+  top: 0;
+  left: 0;
+  position: center;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+  opacity: 1;
+  overflow-y: scroll;
+}
+.backdrop.is-about {
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+}
+.backdrop.is-about.about-modal {
+  transform: translate(-50%, -50%);
+}
+
 .about-modal {
   position: absolute;
+  z-index: 20;
   top: 50%;
   left: 50%;
-  transform: scale(1) translate(-50%, -50%);
-  width: 800px;
+  transform: translate(-50%, -50%);
+  transition: transform $function-transition;
+  
+  width: 100%;
+  height: 100%;
+
   background-color: $secondary-background-color;
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-    0px 2px 1px rgba(0, 0, 0, 0.2);
-  border-radius: 4px;
-  transition: $function-transition;
-  @media screen and (max-width: 767px) {
+  box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+  border-radius: 24px;
+  
+  @media screen and (min-width: 480px) {
+    max-width: 380px;
+  }
+  @media screen and (min-width: 768px) {
     max-width: 500px;
   }
-  @media screen and (max-width: 479px) {
-    max-width: 320px;
+  @media screen and (min-width: 1280px) {
+    max-width: 800px;
+    height: 75%;
   }
 }
 
-
-.backdrop-about{
-      
-      position: fixed;
-       top: 0;
-       left: 0;
-       min-width: 100%;
-       min-height: 100%;
-       opacity: 1;
-        }
-.backdrop-about.is-about {
-            visibility: hidden;
-            opacity: 0;
-            pointer-events:none;
-         }
-.backdrop-about.is-about.about-modal {
-            transform: scale(0.9) translate(-50%, -50%);
-            
-            @media screen and (min-width: 767px) {
-              overflow-y: scroll;
-              width: 100%;
-            }
-}
-.about-modal{
+.about-modal__close {
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: scale(1) translate(-50%,-50%);
-  border-radius: 24px;
-  background-color: $menu-background-color;
+  top: 25px;
+  right: 25px;
+  width: 110px;
+  height: 25px;
+  border-radius: 25px;
+  cursor: pointer;
+  background: $title-text-color;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: $function-transition;
+  transform-style: preserve-3d;
 }
-.about-modal__close{
-    position: absolute;
-    top: 8px;
-    right: 8px;
-    width: 110px;
-    height: 23px;
-    border-radius: 25px;
-    cursor: pointer;
-    background: $title-text-color;
-    color: #FFFFFF;
-    border    : 2px solid rgba(0, 0, 0, 0.795);
-    box-sizing: border-box;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transition: $function-transition;
-    transform-style: preserve-3d;
-}
-.about-modal__close::after{
-    top: -100%;
-	left: 0;
-	width: 100%;
-	position: absolute;
-  border    : 2px solid rgba(0, 0, 0, 0.795);
-	background:$primary-text-color;
-	border-radius: 25px;
-    color: #FFFFFF;
-	content: 'Click';
-	transform-origin: left bottom;
-	transform: rotateX(90deg)
+.about-modal__close::after {
+  top: -100%;
+  left: 0;
+  width: 100%;
+  position: absolute;
+  background: $primary-text-color;
+  border-radius: 5px;
+  color: #ffffff;
+  content: 'Click';
+  transform-origin: left bottom;
+  transform: rotateX(90deg);
 
 }
 .about-modal__close:hover {
@@ -357,32 +357,32 @@
 }
 
 .about-form {
-  margin: 15px;
+  margin: 50px;
 }
 
-.about-form__title{
-    font-family: Titan One;
-    font-style: normal;
-    font-weight: normal;
+.about-form__title {
+  font-family: Titan One;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 1.4;
+  margin-top: 40px;
+  text-align: center;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+
+  margin-bottom: 15px;
+  color: #FFFFFF;
+  @media screen and (min-width: 480px) {
+    font-size: 22px;
+    line-height: 1.4;
+    margin-top: 40px;
+  }
+  @media screen and (min-width: 768px) {
     font-size: 30px;
     line-height: 1.1;
-    text-align: center;
-    letter-spacing: 0.04em;
-    text-transform: uppercase;
-    
-    margin-bottom: 15px;
-    color: $label-text-color;
-    @media screen and (max-width:479px){
-        font-size: 18px;
-        line-height: 1.4; 
-        margin-top: 40px;
-    }
-    @media screen and (max-width:767px){
-        font-size: 22px;
-        line-height: 1.4;
-        margin-top: 40px; 
-    }
-    
+  }
+
 }
 .about-form__text{
     font-family: Titan One;
@@ -403,16 +403,14 @@
         line-height: 1.4; 
     }
 }
-.about-form__advertising{
-width: 380px;
-font-family: DM Sans;
-font-style: normal;
-font-weight: 500;
-font-size: 16px;
-line-height: 194%;
-letter-spacing: 0.04em;
-color: $primary-background-color;
-@media screen and (max-width:479px){
+
+.about-form__advertising {
+  font-family: DM Sans;
+  font-style: normal;
+  font-weight: 500;
+  letter-spacing: 0.04em;
+  color: $title-text-color;
+  @media screen and (max-width: 479px) {
 
     font-size: 12px;
     line-height: 16px;
@@ -425,28 +423,33 @@ color: $primary-background-color;
     width: 480px;
     margin-bottom: 15px;
   }
+  @media screen and (min-width: 768px) {
+    font-size: 16px;
+    line-height: 194%;
+  }
 }
 .about-form__advertising--fatty {
-  color: #000000;
+  color: $secondary-text-color;
   margin-bottom: 15px;
 }
 .about-form-box {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
   margin-top: 20px;
-  @media screen and (min-width: 768px) {
-    display: flex;
+  @media screen and (min-width: 1280px) {
+    justify-content: space-around;
+    flex-wrap: nowrap;
   }
 }
 .about-form-foto {
-  width: 400px;
-  height: 450px;
+  max-width: 290px;
+  max-height: 320px;
+  border-radius: 24px;
+
   @media screen and (min-width: 768px) {
-    margin-left: auto;
-  }
-  @media screen and (max-width: 479px) {
-    width: 290px;
-    height: 320px;
-  }
-  @media screen and (max-width: 767px) {
-    width: 480px;
+    margin-left: 20px;
+    max-width: 400px;
+    max-height: 450px;
   }
 }
