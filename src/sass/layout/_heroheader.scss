@@ -6,10 +6,11 @@
     top: 37px;
   }
 }
+
 .container__header {
   display: flex;
-  width: 100vw;
   justify-content: space-between;
+  min-width: 320px;
 }
 
 // logo style
@@ -17,14 +18,14 @@
   width: 199px;
   display: flex;
   align-items: center;
-  justify-content: space-between;
 }
 .logo__text {
   color: $title-text-color;
   font-family: Titan One, sans-serif;
   font-weight: 400;
-  font-size: 26px;
+  font-size: 22px;
   line-height: 1.06;
+  margin-left: 18px;
 }
 .logo__icon {
   background-color: white;
@@ -221,6 +222,7 @@
   background-color: $secondary-background-color;
 
   position: relative;
+  overflow: hidden;
   @media screen and (min-width: 768px) {
     padding-top: 102px;
     padding-bottom: 28px;
@@ -452,7 +454,6 @@
   height: 344px;
   background-color: $label-text-color;
   border-radius: 100%;
-  overflow-x: hidden;
 
   position: absolute;
   top: 83px;
@@ -489,7 +490,8 @@
 .img-icecream {
   position: absolute;
   bottom: 0;
-  right: 32px;
+  right: 10%;
+
   @media screen and (min-width: 768px) {
     right: 36%;
   }
