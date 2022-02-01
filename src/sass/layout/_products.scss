@@ -105,17 +105,6 @@
 .milkshakes {
     background-color: $third-product-color;
 }
-.products-item__block > p{
-    font-family: DM Sans;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 16px;
-    line-height: 176%;
-    margin-top: 30px;
-    text-align: center;
-    letter-spacing: 0.04em;
-    color: #FFFFFF;
-}
 .ice-cream::before {
     content: url("/images/product-1m-249@1x.png");
     position: absolute;
@@ -197,21 +186,6 @@
         }
     }
 }
-.products__block {
-    display: flex;
-    flex-wrap: wrap;
-}
-.product-menu__item__information{
-    font-family: DM SANS;
-    font-style: normal;
-    font-weight: bolt;
-    font-size: 16px;
-    line-height: 176%;
-    text-align: center;
-    letter-spacing: 0.04em;
-    color: #FFFFFF;
-    margin-top: 32px;
-}
 .card-text {
     font-weight: bold;
     font-size: 14px;
@@ -219,21 +193,38 @@
     text-align: center;
     letter-spacing: 0.04em;
     padding: 0 40px;
-    line-height: 176%;
-    @media screen and (min-width: 768px) and (max-width: 1279px) {
-        padding: 0 10px;
+    margin-top: 30px;
+    color: white;
+    @media screen and (min-width: 768px) {
+        padding: 0 11px;
+        line-height: 176%;
+    }
+    @media screen and (min-width: 1280px) {
+        padding: 0 44px;
+        font-size: 16px;
+    }
+}
+@media screen and (min-width: 768px){
+    .text-non {
+        display: none;
     }
 }
 .box {
     position: relative;
     left: 50%;
     transform: translateX(-50%);
-    margin-top: 60px;
+    margin-top: 30px;
     border: 0px solid ;
     width: 40px;
     height: 40px;
     border-radius: 50%;
     background-color: white;
+    @media screen and (min-width: 768px) {
+        margin-top: 40px;
+    }
+    @media screen and (min-width: 1280px) {
+        margin-top: 62px;
+    }
 }
 .arrow {
     position: absolute;
