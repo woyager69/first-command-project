@@ -1,5 +1,5 @@
 .products {
-    padding: 120px 0 100px 0;
+    padding: 118px 0 98px 0;
     @media screen and (min-width: 768px) {
         padding-bottom: 110px; 
     }
@@ -56,8 +56,14 @@
     text-align: center;
     letter-spacing: 0.04em;
     text-transform: uppercase;
-    padding-top: 185px;
+    padding-top: 160px;
     color: #FFFFFF;
+    @media screen and (min-width: 768px) {
+        padding-top: 152px;
+    }
+    @media screen and (min-width: 1280px) {
+        padding-top: 163px;
+    }
 }
 .products-menu{ 
         padding-top: 144px;
@@ -97,7 +103,7 @@
 .product-menu__item__text::after{
     content: "...";
     display: block;
-    padding-top: 25px;
+    padding-top: 20px;
 }
 .ice-coffee{
     background-color: $second-product-color;
@@ -125,6 +131,7 @@
     }
     @media screen and (min-width: 1280px) {
         content: url("/images/product-1d-335@1x.png");
+        transform: translateY(40%);
         @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
             .ice-cream::before {
                 content: url("/images/product-1d-670@2x.png");
@@ -152,6 +159,7 @@
     }
     @media screen and (min-width: 1280px) {
         content: url("/images/product-2d-335@1x.png");
+        transform: translateY(40%);
         @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
             .ice-coffee::before {
                 content: url("/images/product-2d-670@2x.png");
@@ -179,6 +187,7 @@
     }
     @media screen and (min-width: 1280px) {
         content: url("/images/product-3d-335@1x.png");
+        transform: translateY(40%);
         @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
             .milkshakes::before {
                 content: url("/images/product-3d-670@2x.png");
@@ -193,7 +202,7 @@
     text-align: center;
     letter-spacing: 0.04em;
     padding: 0 40px;
-    margin-top: 30px;
+    margin-top: 25px;
     color: white;
     @media screen and (min-width: 768px) {
         padding: 0 11px;
@@ -213,7 +222,7 @@
     position: relative;
     left: 50%;
     transform: translateX(-50%);
-    margin-top: 30px;
+    margin-top: 25px;
     border: 0px solid ;
     width: 40px;
     height: 40px;
