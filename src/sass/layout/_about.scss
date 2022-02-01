@@ -12,7 +12,7 @@
   }
   .background {
     background-color: $primary-background-color;
-    @media screen and (min-width: 1280px) {
+    @media screen and (min-width: 320px) and (max-width:767px) {
       background-image: url(../images/milk-left-m@1x.png),
         url(../images/milk-right-m@1x.png);
         @media screen and (min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
@@ -22,17 +22,17 @@
       background-position: left, right;
       background-size: contain;
     }
-    @media screen and (min-width: 320px) and (max-width:768px) {
-        background-image: url(../images/milk-left-m@1x.png),
-          url(../images/milk-right-m@1x.png);
+    @media screen and (min-width: 1280px) {
+        background-image: url(../images/milk-left-d@1x.png),
+          url(../images/milk-right-d@1x.png);
           @media screen and (min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
-              background-image: url("../images/milk-left-m@2x.png"), url("../images/milk-right-m@2x.png");
+              background-image: url("../images/milk-left-d@2x.png"), url("../images/milk-right-d@2x.png");
           }
         background-repeat: no-repeat;
         background-position: left, right;
         background-size: contain;
       }
-  } 
+  }
   
 .about__text{
     font-family: Titan One;
@@ -244,22 +244,21 @@
     }
     }
 
-.backdrop{
-        position: fixed;
+.backdrop-about{
+      
+      position: fixed;
        top: 0;
        left: 0;
-       position: center;
        min-width: 100%;
        min-height: 100%;
-       background-color: rgba(0, 0, 0, 0.2);
        opacity: 1;
         }
-.backdrop.is-about {
+.backdrop-about.is-about {
             visibility: hidden;
             opacity: 0;
             pointer-events:none;
          }
-.backdrop.is-about.about-modal {
+.backdrop-about.is-about.about-modal {
             transform: scale(0.9) translate(-50%, -50%);
             
             @media screen and (min-width: 767px) {
@@ -267,16 +266,25 @@
               width: 100%;
             }
 }
+.about-modal{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: scale(1) translate(-50%,-50%);
+  border-radius: 24px;
+  background-color: $menu-background-color;
+}
 .about-modal__close{
     position: absolute;
     top: 8px;
     right: 8px;
     width: 110px;
-    height: 25px;
-    border-radius: 5px;
+    height: 23px;
+    border-radius: 25px;
     cursor: pointer;
-    background: #72f3f37a;
-    border    : 1px solid rgba(0, 0, 0, 0.1);
+    background: $title-text-color;
+    color: #FFFFFF;
+    border    : 2px solid rgba(0, 0, 0, 0.795);
     box-sizing: border-box;
     display: flex;
     justify-content: center;
@@ -289,8 +297,9 @@
 	left: 0;
 	width: 100%;
 	position: absolute;
-	background: #3a9999;
-	border-radius: 5px;
+  border    : 2px solid rgba(0, 0, 0, 0.795);
+	background:$primary-text-color;
+	border-radius: 25px;
     color: #FFFFFF;
 	content: 'Click';
 	transform-origin: left bottom;
@@ -316,7 +325,7 @@
     text-transform: uppercase;
     
     margin-bottom: 15px;
-    color: #f85f07;
+    color: $label-text-color;
     @media screen and (max-width:479px){
         font-size: 18px;
         line-height: 1.4; 
@@ -338,7 +347,7 @@
     text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
-    color: $title-text-color;
+    color:$title-text-color;
     @media screen and (max-width:479px){
         font-size: 18px;
         line-height: 1.4; 
@@ -356,7 +365,7 @@ font-weight: 500;
 font-size: 16px;
 line-height: 194%;
 letter-spacing: 0.04em;
-color:  hsla(229, 78%, 35%, 0.863);
+color: $primary-background-color;
 @media screen and (max-width:479px){
     font-size: 12px;
     line-height: 16px; 
