@@ -2,14 +2,19 @@
   position: absolute;
   top: 7px;
   z-index: 95;
+
   @media screen and (min-width: 768px) {
     top: 37px;
   }
 }
+
 .container__header {
   display: flex;
-  width: 100vw;
   justify-content: space-between;
+  @media screen and (max-width: 480px) {
+    min-width: 320px;
+    width: 100vw;
+  }
 }
 
 // logo style
@@ -17,14 +22,14 @@
   width: 199px;
   display: flex;
   align-items: center;
-  justify-content: space-between;
 }
 .logo__text {
   color: $title-text-color;
   font-family: Titan One, sans-serif;
   font-weight: 400;
-  font-size: 26px;
+  font-size: 22px;
   line-height: 1.06;
+  margin-left: 18px;
 }
 .logo__icon {
   background-color: white;
@@ -56,23 +61,6 @@
       background-color: $first-accent-color;
     }
   }
-}
-.hero-btn--menu {
-  display: inline-block;
-  display: flex;
-  align-items: center;
-  padding: 12px 48px;
-  margin: 0 auto;
-
-  background-color: white;
-  color: $title-text-color;
-
-  border-radius: 22px;
-
-  font-family: inherit, sans-serif;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.31;
 }
 
 .btn-gap {
@@ -124,19 +112,12 @@
 }
 
 .menu {
-  width: 250px;
-  height: 100vh;
-
-  margin: 0;
-  padding: 60px 24px;
-
   background-color: $menu-background-color;
   position: absolute;
   transform: translateY(-7px);
   top: 0;
   right: -100%;
   visibility: hidden;
-  overflow: hidden;
 
   z-index: 99;
   transition: right $function-transition;
@@ -147,11 +128,37 @@
   }
 }
 .checkbox:checked ~ .menu {
+  width: 250px;
+  height: 100vh;
+
+  margin: 0;
+  padding: 60px 24px;
   visibility: visible;
   right: 0;
 }
 .checkbox {
   opacity: 0;
+
+  &:checked ~ .menu > .hero-btn--menu {
+    display: inline-block;
+    display: flex;
+    align-items: center;
+    padding: 12px 48px;
+    margin: 0 auto;
+
+    background-color: white;
+    color: $title-text-color;
+
+    border-radius: 22px;
+
+    font-family: inherit, sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.31;
+  }
+  &:checked ~ .menu .menu__list {
+    display: block;
+  }
 
   &:checked ~ .menu-btn > .menu-icon::before,
   &:checked ~ .menu-btn > .menu-icon::after {
@@ -176,6 +183,12 @@
       bottom: 90%;
     }
   }
+}
+.hero-btn--menu {
+  display: none;
+}
+.menu__list {
+  display: none;
 }
 
 .menu__item {
@@ -221,6 +234,7 @@
   background-color: $secondary-background-color;
 
   position: relative;
+  overflow: hidden;
   @media screen and (min-width: 768px) {
     padding-top: 102px;
     padding-bottom: 28px;
@@ -452,7 +466,6 @@
   height: 344px;
   background-color: $label-text-color;
   border-radius: 100%;
-  overflow-x: hidden;
 
   position: absolute;
   top: 83px;
@@ -489,7 +502,8 @@
 .img-icecream {
   position: absolute;
   bottom: 0;
-  right: 32px;
+  right: 10%;
+
   @media screen and (min-width: 768px) {
     right: 36%;
   }
