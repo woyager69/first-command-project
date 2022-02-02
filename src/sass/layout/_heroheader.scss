@@ -3,10 +3,11 @@
   z-index: 95;
   left: 50%;
   transform: translateX(-50%);
-  top: 7px;
+  padding-top: 6px;
+  width: 100vw;
 
   @media screen and (min-width: 768px) {
-    top: 37px;
+    padding-top: 37px;
   }
 }
 
@@ -77,10 +78,12 @@
 //mobile menu
 .sitenav-menu {
   display: block;
+  position: absolute;
+  right: 0;
+  margin-top: -6px;
 
   @media screen and (min-width: 768px) {
-    margin-left: auto;
-    margin-right: 30px;
+    margin-top: -37px;
   }
 
   @media screen and (min-width: 1280px) {
@@ -92,10 +95,17 @@
   height: 12px;
   display: flex;
   align-items: center;
-
   position: relative;
-
   z-index: 100;
+  top: 10px;
+  right: 28px;
+  @media screen and (min-width: 480px) {
+    right: calc((100vw - 480px) / 2 + 20px);
+  }
+  @media screen and (min-width: 768px) {
+    top: 39px;
+    right: calc((100vw - 768px) / 2 + 232px);
+  }
 }
 .menu-icon,
 .menu-icon::before,
@@ -121,16 +131,16 @@
 .menu {
   background-color: $menu-background-color;
   position: absolute;
-  transform: translateY(-7px);
+  // transform: translatex(250px);
   top: 0;
-  right: -100%;
+  right: 0;
   visibility: hidden;
 
   z-index: 99;
   transition: right $function-transition;
   @media screen and (min-width: 768px) {
-    width: 39vw;
-    transform: translateY(-37px);
+    // width: 39vw;
+    transform: translatex(0px);
     top: 0;
   }
 }
@@ -138,7 +148,7 @@
   width: 250px;
   height: 100vh;
 
-  margin: 0;
+  // margin: 0;
   padding: 60px 24px;
   visibility: visible;
   right: 0;
@@ -182,12 +192,15 @@
     transform: rotate(90deg);
     top: 0;
   }
-
+  &:checked ~ .menu-btn {
+    top: 10px;
+    right: 28px;
+  }
   @media screen and (min-width: 768px) {
     &:checked ~ .menu-btn {
       position: absolute;
-      right: 5%;
-      bottom: 90%;
+      right: 34px;
+      top: 23px;
     }
   }
 }
