@@ -5,6 +5,7 @@
   transform: translateX(-50%);
   padding-top: 6px;
   width: 100vw;
+  max-width: 100%;
 
   @media screen and (min-width: 768px) {
     padding-top: 37px;
@@ -78,7 +79,8 @@
 //mobile menu
 .sitenav-menu {
   display: block;
-  position: absolute;
+  position: fixed;
+  // position: absolute;
   right: 0;
   margin-top: -6px;
 
@@ -131,30 +133,37 @@
 .menu {
   background-color: $menu-background-color;
   position: absolute;
-  // transform: translatex(250px);
+
   top: 0;
   visibility: hidden;
   right: -250px;
+  // transform: translateX(250px);
 
   z-index: 99;
   transition: right $function-transition;
+  // transition: transform $function-transition;
+
   @media screen and (min-width: 768px) {
     right: -40vw;
   }
 }
 .checkbox:checked ~ .menu {
+  position: fixed;
   width: 250px;
   height: 100vh;
+  padding-top: 60px;
+  overflow: auto;
 
   // margin: 0;
-  padding: 60px 24px;
+  // padding: 60px 24px;
   visibility: visible;
   right: 0;
+  bottom: 0;
+  // transform: translateX(0);
 
   @media screen and (min-width: 768px) {
     width: 40vw;
 
-    transform: translatex(0px);
     top: 0;
   }
 }
@@ -180,6 +189,7 @@
   }
   &:checked ~ .menu .menu__list {
     display: block;
+    margin-top: 19px;
   }
 
   &:checked ~ .menu-btn > .menu-icon::before,
@@ -217,12 +227,18 @@
 }
 
 .menu__item {
+  padding-left: 24px;
   display: block;
-  margin-top: 19px;
+
   height: 42px;
 
   align-items: flex-end;
   display: flex;
+
+  border-top: 0.5px solid #c4c4c430;
+  &:last-child {
+    border-bottom: 0.5px solid #c4c4c430;
+  }
 }
 
 // sitenav desktop
@@ -238,6 +254,9 @@
   margin-left: 35px;
 }
 .sitenav__link {
+  padding-top: 10px;
+  padding-bottom: 10px;
+
   font-family: DM Sans, sans-serif;
   font-weight: 700;
   font-size: 14px;
@@ -309,23 +328,26 @@
 
 // button after headline
 .hero-nav {
+  margin-top: 19px;
   display: flex;
   position: relative;
   z-index: 89;
+  @media screen and (min-width: 768px) {
+    margin-top: 20px;
+  }
+  @media screen and (min-width: 1280px) {
+    margin-top: 25px;
+  }
 }
 .hero-nav__item {
-  margin-top: 19px;
   padding: 6px 14px;
   background-color: $title-text-color;
   border-radius: 22px;
   & + .hero-nav__item {
     margin-left: 8px;
   }
-  @media screen and (min-width: 768px) {
-    margin-top: 20px;
-  }
+
   @media screen and (min-width: 1280px) {
-    margin-top: 25px;
     padding: 13px 22px;
     cursor: pointer;
     transition: background-color $function-transition;
