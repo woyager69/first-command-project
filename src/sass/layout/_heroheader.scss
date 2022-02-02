@@ -133,15 +133,13 @@
   position: absolute;
   // transform: translatex(250px);
   top: 0;
-  right: 0;
   visibility: hidden;
+  right: -250px;
 
   z-index: 99;
   transition: right $function-transition;
   @media screen and (min-width: 768px) {
-    // width: 39vw;
-    transform: translatex(0px);
-    top: 0;
+    right: -40vw;
   }
 }
 .checkbox:checked ~ .menu {
@@ -152,6 +150,13 @@
   padding: 60px 24px;
   visibility: visible;
   right: 0;
+
+  @media screen and (min-width: 768px) {
+    width: 40vw;
+
+    transform: translatex(0px);
+    top: 0;
+  }
 }
 .checkbox {
   opacity: 0;
