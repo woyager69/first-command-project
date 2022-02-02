@@ -1,99 +1,69 @@
-.about {
+.section-about {
   background-color: $primary-background-color;
-  @media screen and (min-width: 320px) {
-    padding-top: 125px;
-  }
-
-  .background {
-    background-color: $primary-background-color;
-    @media screen and (min-width: 320px) and (max-width:767px) {
-      background-image: url(../images/milk-left-m@1x.png),
+  @media screen and (min-width: 320px) and (max-width:767px) {
+    background-image: url(../images/milk-left-m@1x.png),
         url(../images/milk-right-m@1x.png);
-        @media screen and (min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
-            background-image: url("../images/milk-left-m@2x.png"), url("../images/milk-right-m@2x.png");
-        }
-      background-repeat: no-repeat;
-      background-position: left, right;
-      background-size: contain;
-    }
-    @media screen and (min-width: 1280px) {
-        background-image: url(../images/milk-left-d@1x.png),
-          url(../images/milk-right-d@1x.png);
-          @media screen and (min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
-              background-image: url("../images/milk-left-d@2x.png"), url("../images/milk-right-d@2x.png");
-          }
-        background-repeat: no-repeat;
-        background-position: left, right;
-        background-size: contain;
+      @media screen and (min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
+        background-image: url("../images/milk-left-m@2x.png"), url("../images/milk-right-m@2x.png");
       }
+    background-repeat: no-repeat;
+    background-position: left, right;
+    background-size: contain;
   }
-  
+  @media screen and (min-width: 1280px) {
+    background-image: url(../images/milk-left-d@1x.png),
+        url(../images/milk-right-d@1x.png);
+      @media screen and (min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
+          background-image: url("../images/milk-left-d@2x.png"), url("../images/milk-right-d@2x.png");
+      }
+    background-repeat: no-repeat;
+    background-position: left, right;
+    background-size: contain;
+  }
+  padding-top: 125px;
+}
+
+// .background {
+//   background-color: $primary-background-color;
+//   @media screen and (min-width: 320px) and (max-width: 767px) {
+//     background-image: url(../images/milk-left-m@1x.png), url(../images/milk-right-m@1x.png);
+//     @media screen and (min-device-pixel-ratio: 2),
+//       screen and (min-resolution: 192dpi),
+//       screen and (min-resolution: 2dppx) {
+//       background-image: url('../images/milk-left-m@2x.png'), url('../images/milk-right-m@2x.png');
+//     }
+//     background-repeat: no-repeat;
+//     background-position: left, right;
+//     background-size: contain;
+//   }
+//   @media screen and (min-width: 1280px) {
+//     background-image: url(../images/milk-left-d@1x.png), url(../images/milk-right-d@1x.png);
+//     @media screen and (min-device-pixel-ratio: 2),
+//       screen and (min-resolution: 192dpi),
+//       screen and (min-resolution: 2dppx) {
+//       background-image: url('../images/milk-left-d@2x.png'), url('../images/milk-right-d@2x.png');
+//     }
+//     background-repeat: no-repeat;
+//     background-position: left, right;
+//     background-size: contain;
+//   }
+// }
+
 .about__text{
-    font-family: Titan One;
-    font-size: 18px;
-    line-height: 1.17;
-    letter-spacing: 0.04em;
-    text-align: center;
-  
-    margin-bottom: 15px;
-    color:$label-text-color;
-  
-    @media screen and (min-width: 768px) {
-      font-size: 26px;
-      line-height: 1.15;
-    }
-  
-    @media screen and (min-width: 1280px) {
-      font-size: 30px;
-      line-height: 1.13;
-    }
-
-  }
-  @media screen and (min-width: 1280px) {
-    padding-top: 125px;
-  }
-}
-.background {
-  background-color: $primary-background-color;
-  @media screen and (min-width: 320px) and (max-width: 767px) {
-    background-image: url(../images/milk-left-m@1x.png), url(../images/milk-right-m@1x.png);
-    @media screen and (min-device-pixel-ratio: 2),
-      screen and (min-resolution: 192dpi),
-      screen and (min-resolution: 2dppx) {
-      background-image: url('../images/milk-left-m@2x.png'), url('../images/milk-right-m@2x.png');
-    }
-    background-repeat: no-repeat;
-    background-position: left, right;
-    background-size: contain;
-  }
-  @media screen and (min-width: 1280px) {
-    background-image: url(../images/milk-left-d@1x.png), url(../images/milk-right-d@1x.png);
-    @media screen and (min-device-pixel-ratio: 2),
-      screen and (min-resolution: 192dpi),
-      screen and (min-resolution: 2dppx) {
-      background-image: url('../images/milk-left-d@2x.png'), url('../images/milk-right-d@2x.png');
-    }
-    background-repeat: no-repeat;
-    background-position: left, right;
-    background-size: contain;
-  }
-}
-
-.about__text {
   font-family: Titan One;
   font-size: 18px;
   line-height: 1.17;
   letter-spacing: 0.04em;
   text-align: center;
-
+  
   margin-bottom: 15px;
-  color: $label-text-color;
-
+  color:$label-text-color;
+  
   @media screen and (min-width: 768px) {
     font-size: 26px;
     line-height: 1.15;
   }
-
+  
   @media screen and (min-width: 1280px) {
     font-size: 30px;
     line-height: 1.13;
@@ -147,10 +117,7 @@
 }
 
 .about-desc {
-  margin-left: auto;
-  @media screen and (min-width: 320px) and (max-width: 767px) {
-    margin: 0 auto;
-  }
+  margin: 0 auto;
 
   @media screen and (min-width: 768px) {
     max-width: 340px;
@@ -214,7 +181,7 @@
   }
 }
 
-.about-text-two-indent {
+.about-text-two--indent {
   font-family: DM Sans;
   font-style: normal;
   font-size: 12px;
@@ -240,16 +207,17 @@
     }
   }
 }
+
 .about-modal__open {
   display: flex;
-  justify-content: space-evenly;
-
+  justify-content: center;
+  align-items: center;
+  text-align: center;
   width: 176px;
   height: 44px;
   background: #ffffff;
   border-radius: 22px;
-  align-items: center;
-  text-align: center;
+  
   font-family: DM Sans;
   font-style: normal;
   font-weight: bold;
@@ -267,13 +235,13 @@
   background: $first-accent-color;
 }
 .about-modal-icon {
-  fill: $title-text-color;
+  margin-left: 13px;
 }
 
 
 
 // modal //
-.backdrop {
+.backdrop-about {
   position: fixed;
   z-index: 10;
   top: 0;
@@ -285,13 +253,15 @@
   opacity: 1;
   overflow-y: scroll;
 }
-.backdrop.is-about {
+
+.backdrop-about.hidden {
   visibility: hidden;
   opacity: 0;
   pointer-events: none;
-}
-.backdrop.is-about.about-modal {
-  transform: translate(-50%, -50%);
+ 
+   &.about-modal {
+    transform: translate(-50%, -50%);
+   }
 }
 
 .about-modal {
@@ -304,7 +274,8 @@
   
   width: 100%;
   height: 100%;
-
+  padding: 30px;
+  overflow-y: scroll;
   background-color: $secondary-background-color;
   box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
   border-radius: 24px;
@@ -314,9 +285,10 @@
   }
   @media screen and (min-width: 768px) {
     max-width: 500px;
+    height: 90%;
   }
   @media screen and (min-width: 1280px) {
-    max-width: 800px;
+    max-width: 750px;
     height: 75%;
   }
 }
@@ -356,15 +328,11 @@
   transform: rotateX(-90deg) translateY(100%);
 }
 
-.about-form {
-  margin: 50px;
-}
-
 .about-form__title {
   font-family: Titan One;
   font-style: normal;
   font-weight: normal;
-  font-size: 18px;
+  font-size: 16px;
   line-height: 1.4;
   margin-top: 40px;
   text-align: center;
@@ -373,12 +341,12 @@
 
   margin-bottom: 15px;
   color: #FFFFFF;
-  @media screen and (min-width: 480px) {
+  @media screen and (min-width: 768px) {
     font-size: 22px;
     line-height: 1.4;
     margin-top: 40px;
   }
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 1280px) {
     font-size: 30px;
     line-height: 1.1;
   }
@@ -388,20 +356,22 @@
     font-family: Titan One;
     font-style: normal;
     font-weight: normal;
-    font-size: 38px;
-    line-height: 1.5;
+    font-size: 20px;
+    line-height: 1.4;
     text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
     color:$title-text-color;
-    @media screen and (max-width:479px){
-        font-size: 18px;
+
+    @media screen and (min-width: 767px){
+        font-size: 24px;
         line-height: 1.4; 
     }
-    @media screen and(min-width:480px) and (max-width:767px){
-        font-size: 22px;
-        line-height: 1.4; 
-    }
+
+    @media screen and (min-width: 1280px){
+      font-size: 32px;
+      line-height: 1.5; 
+  }
 }
 
 .about-form__advertising {
@@ -409,47 +379,51 @@
   font-style: normal;
   font-weight: 500;
   letter-spacing: 0.04em;
-  color: $title-text-color;
-  @media screen and (max-width: 479px) {
+  color: $secondary-text-color;
 
     font-size: 12px;
     line-height: 16px;
     width: 290px;
     margin-bottom: 15px;
-  }
-  @media screen and(min-width:480px) and (max-width: 767px) {
-    font-size: 20px;
+
+  @media screen and(min-width: 768px) {
+    font-size: 16px;
     line-height: 1.2;
     width: 480px;
     margin-bottom: 15px;
   }
-  @media screen and (min-width: 768px) {
-    font-size: 16px;
+  @media screen and (min-width: 1280px) {
+    font-size: 18px;
     line-height: 194%;
   }
 }
-.about-form__advertising--fatty {
-  color: $secondary-text-color;
-  margin-bottom: 15px;
-}
+//.about-form__advertising--fatty {
+//  color: $secondary-text-color;
+//  margin-bottom: 15px;
+//}
+
 .about-form-box {
   display: flex;
-  justify-content: flex-start;
-  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
   margin-top: 20px;
+
   @media screen and (min-width: 1280px) {
     justify-content: space-around;
+    flex-direction: row;
     flex-wrap: nowrap;
   }
 }
 .about-form-foto {
-  max-width: 290px;
-  max-height: 320px;
+  max-width: 190px;
+  max-height: 220px;
   border-radius: 24px;
+  margin-top: 15px;
 
   @media screen and (min-width: 768px) {
     margin-left: 20px;
-    max-width: 400px;
-    max-height: 450px;
+    max-width: 300px;
+    max-height: 350px;
   }
 }
